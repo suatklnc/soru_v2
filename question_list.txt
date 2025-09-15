@@ -1,0 +1,248 @@
+=== ÇIKARILAN SORULAR ===
+
+Soru 1:
+  Dosya: soru_1_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x341
+  Metin: 1. Bu testte 40 soru vardır.
+--------------------------------------------------
+Soru 2:
+  Dosya: soru_2_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x341
+  Metin: 2. Cevaplarınızı, cevap kâğıdının Temel Matemati 22
+--------------------------------------------------
+Soru 3:
+  Dosya: soru_3_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x341
+  Metin: 3. 6 2 3 3 1 − + işleminin sonucu kaçtır? A)
+--------------------------------------------------
+Soru 4:
+  Dosya: soru_4_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x355
+  Metin: 4. ( ) ( ) + − − 2 2 a 1 a 1 ifadesi aşağıdakilerden hangisine eşittir?
+--------------------------------------------------
+Soru 5:
+  Dosya: soru_5_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x341
+  Metin: 5. 1 2 3 10 10 10 − − − + + işleminin sonucu kaçtır? A) 0,011
+--------------------------------------------------
+Soru 6:
+  Dosya: soru_6_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x341
+  Metin: 6. 3n 5 (16) 8 = olduğuna göre,  n  kaçtır? A) 3
+--------------------------------------------------
+Soru 7:
+  Dosya: soru_7_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x341
+  Metin: 7. 13 13 13 15 6 15 8 15 • • + + işleminin sonucu kaçtır? A)
+--------------------------------------------------
+Soru 8:
+  Dosya: soru_8_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x344
+  Metin: 8. 1 1 3a 3b 2 8 − = + olduğuna göre, a b + toplamı kaçtır? A) 3
+--------------------------------------------------
+Soru 9:
+  Dosya: soru_9_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x394
+  Metin: 9. 5 7 x 4 3 − < < eşitsizliğini sağlayan  x  tam sayılarının toplamı kaçtır? A) 2 − B) 1 − C) 0
+--------------------------------------------------
+Soru 10:
+  Dosya: soru_10_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x341
+  Metin: 10. 3 4 x 2y 7 x 2xy 21
+--------------------------------------------------
+Soru 11:
+  Dosya: soru_11_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x424
+  Metin: 11. x ve y doğal sayıları için olduğuna göre, • x y  çarpımının 5’e bölümünden elde edilen kalan kaç...
+--------------------------------------------------
+Soru 12:
+  Dosya: soru_12_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x493
+  Metin: 12. a, b, x ve y pozitif birer sayı olmak üzere, 2 2 2 2 x b 2 a y a b 20 x y • = + = olduğuna göre,...
+--------------------------------------------------
+Soru 13:
+  Dosya: soru_13_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x452
+  Metin: 13. x, y ve z gerçel sayıları için y 0 x y z > − > olduğuna göre, aşağıdakilerden hangisi her za- ma...
+--------------------------------------------------
+Soru 14:
+  Dosya: soru_14_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x357
+  Metin: 14. Aşağıdakilerden hangisi bir rasyonel sayıdır? A) + 2 1 B) − 2 2 1 C)
+--------------------------------------------------
+Soru 15:
+  Dosya: soru_15_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x377
+  Metin: 15. ( ) ( ) = = − 2 f x x g x 2x 1 fonksiyonları için ( ) ( ) g f 2 kaçtır? A) 0 B) 3
+--------------------------------------------------
+Soru 16:
+  Dosya: soru_16_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x674
+  Metin: 16. p, q ve r önermelerinin değilleri sırasıyla ′ ′ ′ p , q , r ile gösterildiğine göre, aşağıdakile...
+--------------------------------------------------
+Soru 17:
+  Dosya: soru_17_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x447
+  Metin: 17. { } { } A a, b, e B a, b, c, d = = olduğuna göre, (A B) K (A B) ∩ ⊆ ⊆ ∪ koşulunu sağlayan kaç ta...
+--------------------------------------------------
+Soru 18:
+  Dosya: soru_18_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x420
+  Metin: 18. Pozitif tam sayılar kümesi üzerinde ve ⊕ ⊗ işlemleri en büyük ortak bölen ve en küçük ortak kat ...
+--------------------------------------------------
+Soru 19:
+  Dosya: soru_19_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x426
+  Metin: 19. Üç basamaklı ABC ve iki basamaklı AB sayılarının toplamı 392’dir. Buna göre, A B C + + toplamı k...
+--------------------------------------------------
+Soru 20:
+  Dosya: soru_20_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x537
+  Metin: 20. İki basamaklı bir AB sayısı asal olduğunda BA sayısı da asalsa AB’ye simetrik asal denir. Bir AB...
+--------------------------------------------------
+Soru 21:
+  Dosya: soru_21_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x620
+  Metin: 21. Bir manav, limonları, her birinde 12 limon bulunan filelerle almış ve üçer üçer satmıştır. Manav...
+--------------------------------------------------
+Soru 22:
+  Dosya: soru_22_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x609
+  Metin: 22. Bir otomobil lastiği satıcısı, lastiklerde % 25 mevsim sonu indirimi uyguladığında bir günde sat...
+--------------------------------------------------
+Soru 23:
+  Dosya: soru_23_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x633
+  Metin: 23. Bir çiftçi 5, 9, 12, 15, 23 ve 45 litrelik altı bidonun beş tanesini ayçiçeği yağı ve zeytinyağı...
+--------------------------------------------------
+Soru 24:
+  Dosya: soru_24_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x754
+  Metin: 24. Bir güreş müsabakasına katılan dört sporcunun ağır- lıkları bir hafta aralıkla ölçülmüştür. Spor...
+--------------------------------------------------
+Soru 25:
+  Dosya: soru_25_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x729
+  Metin: 25. Bir sokakta, yolun üst tarafındaki evler ardışık tek sa- yılarla, alt tarafındakiler ise ardışık...
+--------------------------------------------------
+Soru 26:
+  Dosya: soru_26_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x580
+  Metin: 26. Aşağıda beş lambadan oluşan bir reklam panosu gösterilmiştir. Panodaki lambalar A lambasından ba...
+--------------------------------------------------
+Soru 27:
+  Dosya: soru_27_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x791
+  Metin: 27. Bir mağaza sahibi, tüm ürünlerde etiket fiyatı üzerin- den % 20 indirim yapıyor. Aynı üründen 5’...
+--------------------------------------------------
+Soru 28:
+  Dosya: soru_28_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x691
+  Metin: 28. Tecrübeli bir aşçı bir pastanın kıvamında olabilmesi için un ve şekerin aşağıdaki doğrusal grafi...
+--------------------------------------------------
+Soru 29:
+  Dosya: soru_29_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x724
+  Metin: 29. Yukarıdaki şekilde, tamamı eş kare motiflerle işlen- miş bir masa örtüsünün masadan sarkan parça...
+--------------------------------------------------
+Soru 30:
+  Dosya: soru_30_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x617
+  Metin: 30. Bir çiftçinin bahçesindeki meyve ağaçlarının dağılımı aşağıdaki dairesel grafikte gösterilmiştir...
+--------------------------------------------------
+Soru 31:
+  Dosya: soru_31_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x495
+  Metin: 31. Bir malın miktarlara bağlı olarak değişen birim satış fiyatı yukarıdaki doğrusal grafikte göster...
+--------------------------------------------------
+Soru 32:
+  Dosya: soru_32_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x503
+  Metin: 32. Bir torbada 2 kırmızı, 2 beyaz ve 1 sarı bilye vardır. Torbadan rastgele 4 bilye alındığında tor...
+--------------------------------------------------
+Soru 33:
+  Dosya: soru_33_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x478
+  Metin: 33. ABC bir üçgen m(ABC) 50 m(CAB) 100 ° = ° = ] ] Yukarıdaki verilere göre, a b b c c a 2 − + − + −...
+--------------------------------------------------
+Soru 34:
+  Dosya: soru_34_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x401
+  Metin: 34. ABCD bir dikdörtgen AD 1 cm AE EB 2 cm FE x = = = = Yukarıdaki verilere göre,  x  kaç cm’dir? A)
+--------------------------------------------------
+Soru 35:
+  Dosya: soru_35_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x515
+  Metin: 35. ABCD bir paralel- kenar AECD bir yamuk BE 3 cm DC 4 cm = = Şekildeki ABCD paralelkenarının alanı...
+--------------------------------------------------
+Soru 36:
+  Dosya: soru_36_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x481
+  Metin: 36. ABCD bir dikdörtgen p CE , A merkezli çember yayı DA 4 cm AC 8 cm = = Yukarıdaki verilere göre, ...
+--------------------------------------------------
+Soru 37:
+  Dosya: soru_37_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x484
+  Metin: 37. O noktası çemberin merkezi AT, çembere T nok- tasında teğet AT 3 cm m(OAT) 45 = ° = ] Yukarıdaki...
+--------------------------------------------------
+Soru 38:
+  Dosya: soru_38_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x465
+  Metin: 38. Yukarıda bir küpün açınımı verilmiştir. Küpün üst yüzeyinde siyah kare bulunduğunda alt yüzeyind...
+--------------------------------------------------
+Soru 39:
+  Dosya: soru_39_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x448
+  Metin: 39. Dik koordinat düzleminde, y 2x 1 0 + −= doğrusu- na ( ) A 1, 0  noktasından çizilen dikme, Y eks...
+--------------------------------------------------
+Soru 40:
+  Dosya: soru_40_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x380
+  Metin: 40. Köşeleri ( ) ( ) ( ) A 3, 1 , B 5, 3 , C 2, 5  ve ( ) D a, b  kö- şegenleri [ ] [ ]
+--------------------------------------------------
+Soru 2010:
+  Dosya: soru_2010_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x345
+  Metin: Buna göre, 2010. sırada yanıp sönen lamba han- gisidir? A) A B) B
+--------------------------------------------------
