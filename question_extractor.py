@@ -22,8 +22,7 @@ class QuestionExtractor:
             
         print("Soru algılama ve çıkarma başlıyor...")
         
-        # Duplicate kontrolü için set - sadece soru numarası
-        processed_question_numbers = set()
+        # Duplicate kontrolü kaldırıldı - talimatlar zaten filtreleniyor
         
         for page_num in range(len(self.doc)):
             page = self.doc.load_page(page_num)
@@ -36,12 +35,6 @@ class QuestionExtractor:
             
             # Her soruyu ayrı görsel olarak kaydet
             for i, question in enumerate(questions_on_page):
-                # Duplicate kontrolü - sadece soru numarası
-                if question['number'] in processed_question_numbers:
-                    print(f"Duplicate soru atlandı: Soru {question['number']} (Sayfa {page_num+1})")
-                    continue
-                
-                processed_question_numbers.add(question['number'])
                 self.extract_question_as_image(page, question, page_num, i, output_dir)
         
         print(f"Toplam {len(self.questions)} soru çıkarıldı.")
@@ -54,16 +47,15 @@ class QuestionExtractor:
         
         # Soru numarası pattern'leri
         question_patterns = [
-            r'(\d+)\.\s*',  # "1. " gibi
-            r'Soru\s*(\d+)',  # "Soru 1" gibi
-            r'(\d+)\s*-\s*',  # "1 - " gibi
+            r'^(\d+)\.\s*',  # "1. " gibi
+            r'^Soru\s*(\d+)',  # "Soru 1" gibi
+            r'^(\d+)\s*-\s*',  # "1 - " gibi
         ]
         
         # Metni satırlara böl
         lines = page_text.split('\n')
         
         current_question = None
-        question_text = ""
         
         for line_num, line in enumerate(lines):
             line = line.strip()
@@ -79,6 +71,10 @@ class QuestionExtractor:
                     break
             
             if question_number:
+                # Talimat mı kontrol et
+                if self.is_instruction(line):
+                    continue
+                
                 # Önceki soruyu kaydet
                 if current_question:
                     questions.append(current_question)
@@ -94,19 +90,51 @@ class QuestionExtractor:
             elif current_question:
                 # Mevcut soruya devam et
                 current_question['full_text'] += ' ' + line
-                
-                # Soru bitti mi kontrol et (sonraki soru numarası veya sayfa sonu)
-                if self.is_end_of_question(line, lines, line_num):
-                    current_question['end_line'] = line_num
-                    questions.append(current_question)
-                    current_question = None
         
         # Son soruyu kaydet
         if current_question:
-            current_question['end_line'] = len(lines) - 1
             questions.append(current_question)
         
         return questions
+    
+    def has_math_content(self, line):
+        """Satırda matematik içeriği var mı kontrol eder - talimatları hariç tutar"""
+        
+        # Önce talimat mı kontrol et
+        if self.is_instruction(line):
+            return False
+        
+        # Matematik içeriği kontrolü
+        math_indicators = [
+            r'[+\-*/]',  # Matematik operatörleri
+            r'kaçtır\?', r'bulunuz', r'hesaplayınız',  # Soru kelimeleri
+            r'olduğuna göre', r'eşittir', r'çarpım', r'toplam',  # Matematik terimleri
+            r'[A-E]\)',  # Şık işaretleri
+            r'şekilde', r'grafik', r'diyagram',  # Görsel terimler
+            r'cm', r'kg', r'm', r'°', r'%'  # Birimler
+        ]
+        
+        # Sayılar + matematik terimleri birlikte olmalı
+        has_numbers = bool(re.search(r'[0-9]', line))
+        has_math_terms = any(re.search(pattern, line) for pattern in math_indicators)
+        
+        return has_numbers and has_math_terms
+    
+    def is_instruction(self, line):
+        """Satırın talimat mı soru mu olduğunu kontrol eder"""
+        
+        # Çok spesifik talimat pattern'leri
+        instruction_patterns = [
+            r'^\d+\.\s*Bu testte \d+ soru vardır',
+            r'^\d+\.\s*Cevaplarınızı, cevap kâğıdının Temel Matemati',
+            r'^\d+\.\s*Test süresi',
+            r'^\d+\.\s*Sınav başlamadan önce',
+            r'^\d+\.\s*Talimatlar',
+            r'^\d+\.\s*Yönergeler'
+        ]
+        
+        # Sadece tam eşleşme kontrol et
+        return any(re.search(pattern, line) for pattern in instruction_patterns)
     
     def is_end_of_question(self, line, lines, line_num):
         """Soru bitti mi kontrol eder - şıklar dahil"""
