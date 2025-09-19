@@ -1,0 +1,242 @@
+=== ÇIKARILAN SORULAR ===
+
+Soru 1:
+  Dosya: soru_1_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x1432
+  Metin: 1. Bir tabletin ekranı; görünüm ayarlarında “büyük simgeler” seçiliyken Şekil 1’deki gibi 3 satır ve...
+--------------------------------------------------
+Soru 2:
+  Dosya: soru_2_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x341
+  Metin: 2. Kerem Öğretmen, üslü ifadeler konusunu işlerken ifadesinin bu şekilde parantez kullanılmadan yazı...
+--------------------------------------------------
+Soru 3:
+  Dosya: soru_3_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x512
+  Metin: 3. Bir matematik kitabının aşağıda bir kısmı gösterilen sayfasındaki 1. işlemin sonucu 2. işlemin so...
+--------------------------------------------------
+Soru 4:
+  Dosya: soru_4_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x372
+  Metin: 4. Bir matematik öğretmeni öğrencilerinden sayısının ondalık gösterimini bulmalarını istemiştir. Bu ...
+--------------------------------------------------
+Soru 5:
+  Dosya: soru_5_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x662
+  Metin: 5. a, b ve c pozitif gerçel sayılar olmak üzere gösteriminin değeri sayısına eşittir. olduğuna göre ...
+--------------------------------------------------
+Soru 6:
+  Dosya: soru_6_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x578
+  Metin: 6. Şeritleri A, B ve C ile isimlendirilen üç şeritli bir otoyoldaki araçlardan bazıları belirli bir ...
+--------------------------------------------------
+Soru 7:
+  Dosya: soru_7_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x989
+  Metin: 7. Bir okulda A ve B sınıfları arasında iki devre oynanan bir futbol maçında, birinci devrede atılan...
+--------------------------------------------------
+Soru 8:
+  Dosya: soru_8_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x825
+  Metin: 8. a, b ve c pozitif tam sayıları için  ifadesi bir çift tam sayı,  ifadesi bir tek tam sayıdır. B...
+--------------------------------------------------
+Soru 9:
+  Dosya: soru_9_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x1348
+  Metin: 9. Beş farklı türdeki toplam 35 tane meyve 15 paket hâlinde şekildeki gibi paketlenmiştir. Ayşenur, ...
+--------------------------------------------------
+Soru 10:
+  Dosya: soru_10_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x555
+  Metin: 10. A ve B iki küme olmak üzere    olduğu biliniyor. Buna göre B kümesi I. bütün çift sayılar II....
+--------------------------------------------------
+Soru 11:
+  Dosya: soru_11_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x912
+  Metin: 11. Beyza ile ilgili p : Ayın birinci gününde doğdu. q : Eylül ayında doğdu. r : 2000 yılında doğdu....
+--------------------------------------------------
+Soru 12:
+  Dosya: soru_12_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x346
+  Metin: 12. Bir doğal sayının kendisi asal sayı ama rakamlarından hiçbiri asal sayı değilse bu sayıya asalız...
+--------------------------------------------------
+Soru 13:
+  Dosya: soru_13_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x911
+  Metin: 13. Dik koordinat düzleminde kapalı aralığında tanımlı f, g ve h doğrusal fonksiyonlarının grafikler...
+--------------------------------------------------
+Soru 14:
+  Dosya: soru_14_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x368
+  Metin: 14. Dört basamaklı A34B doğal sayısının 5 ile bölümünden kalan, 9 ile bölümünden kalana eşittir. Bun...
+--------------------------------------------------
+Soru 15:
+  Dosya: soru_15_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x420
+  Metin: 15. Bir kâğıtta yazılı olan iki basamaklı ardışık beş tek doğal sayıdan her birinin rakamları toplam...
+--------------------------------------------------
+Soru 16:
+  Dosya: soru_16_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x780
+  Metin: 16. Bir veri grubundaki sayılar küçükten büyüğe doğru sıralandığında gruptaki terim sayısı tek ise o...
+--------------------------------------------------
+Soru 17:
+  Dosya: soru_17_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x460
+  Metin: 17. Bir markete giren Melek; 1 demet roka, 2 demet maydanoz ve 3 demet tere alarak kasaya ödeme yapm...
+--------------------------------------------------
+Soru 18:
+  Dosya: soru_18_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x1055
+  Metin: 18. Efe bir basketbol antrenmanında altı atış yapmıştır. Efe her bir atışından sonra o ana kadarki a...
+--------------------------------------------------
+Soru 19:
+  Dosya: soru_19_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x794
+  Metin: 19. Bir bilgisayarda çıktı alınmak istenen sayfalar işaretlenip yazdırma işlemi başlatıldıktan sonra...
+--------------------------------------------------
+Soru 20:
+  Dosya: soru_20_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x773
+  Metin: 20. 1’den 8’e kadar olan sekiz rakam iki gruba ayrılıyor. Birinci gruptaki rakamların toplamının iki...
+--------------------------------------------------
+Soru 21:
+  Dosya: soru_21_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x1018
+  Metin: 21. Geçmişte yazdığı günlüğünün yukarıda gösterilen sayfasını 2020 yılında okuyan Ayşe, bu yazıyı ya...
+--------------------------------------------------
+Soru 22:
+  Dosya: soru_22_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x731
+  Metin: 22. A, B, C, D ve E şehirleri şekildeki gibi doğrusal bir yol üzerinde bulunmaktadır ve A ile E şehi...
+--------------------------------------------------
+Soru 23:
+  Dosya: soru_23_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x836
+  Metin: 23. Bir miktar topun tamamı, içinde ya sadece 1 sarı ya sadece 2 mavi ya da sadece 3 kırmızı renkli ...
+--------------------------------------------------
+Soru 24:
+  Dosya: soru_24_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x945
+  Metin: 24. Oğuz ve annesi arasında telefonda geçen bir mesajlaşma ve mesaj zamanları aşağıda gösterilmiştir...
+--------------------------------------------------
+Soru 25:
+  Dosya: soru_25_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x585
+  Metin: 25. Bir ucunda market, diğer ucunda manav bulunan doğrusal bir sokakta market ile manav arasında ola...
+--------------------------------------------------
+Soru 26:
+  Dosya: soru_26_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x586
+  Metin: 26. Haftada 6 tane birer saatlik matematik (Mat) ve 5 tane birer saatlik geometri (Geo) dersi veren ...
+--------------------------------------------------
+Soru 27:
+  Dosya: soru_27_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x1394
+  Metin: 27. Dikdörtgen şeklindeki ön yüzü kare biçiminde özdeş bölmelere ayrılan bir dolabın bölmeleri, 1’de...
+--------------------------------------------------
+Soru 28:
+  Dosya: soru_28_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x743
+  Metin: 28. Bir internet sitesinde, 21 Haziran 2025 Cumartesi günü saat 10.15’te başlayan TYT’nin başlamasın...
+--------------------------------------------------
+Soru 29:
+  Dosya: soru_29_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x824
+  Metin: 29. Aras; bir pazar gününde spor yapma, film izleme, ödev yapma, ev işi yapma ve banyo yapma aktivit...
+--------------------------------------------------
+Soru 30:
+  Dosya: soru_30_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x358
+  Metin: 30. Defne’nin evine, aralarında Doğa ve Duru’nun bulunduğu 6 arkadaşı misafirliğe gelmiştir. Defne, ...
+--------------------------------------------------
+Soru 31:
+  Dosya: soru_31_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x1076
+  Metin: 31. Her birinin uç noktalarından biri O noktası olan sekiz doğru parçasının aralarında kalan şekilde...
+--------------------------------------------------
+Soru 32:
+  Dosya: soru_32_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x341
+  Metin: 32. Tüm kenarlarının uzunlukları santimetre türünden birbirinden farklı tam sayılar olan bir üçgene ...
+--------------------------------------------------
+Soru 33:
+  Dosya: soru_33_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x1227
+  Metin: 33. Sarı, kırmızı ve mavi renkli ikizkenar üçgen biçimindeki üç parça, tepe açılarının bulunduğu köş...
+--------------------------------------------------
+Soru 34:
+  Dosya: soru_34_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x562
+  Metin: 34. Alanları sırasıyla 1, 2 ve 3 sayılarıyla doğru orantılı olan sarı, mavi ve kırmızı renkli üç dik...
+--------------------------------------------------
+Soru 35:
+  Dosya: soru_35_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x1005
+  Metin: 35. Dikdörtgen biçimindeki bir reklam panosunun alt kenarında bu kenarı üç eş parçaya bölecek şekild...
+--------------------------------------------------
+Soru 36:
+  Dosya: soru_36_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x1076
+  Metin: 36. Bir kazı çalışmasında, şekilde gösterilen ve alanı 10 metrekare olan dik yamuk biçiminde bir tar...
+--------------------------------------------------
+Soru 37:
+  Dosya: soru_37_sayfa_11_sag.png
+  Sayfa: 11 (sag)
+  Boyut: 596x1143
+  Metin: 37. Üç eş kareden iki tanesi birer köşeleri çakışacak biçimde, üçüncü kare ise bir kısmı birinci kar...
+--------------------------------------------------
+Soru 38:
+  Dosya: soru_38_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x1383
+  Metin: 38. n kenarlı bir düzgün çokgenin bir iç açısının ölçüsü olarak hesaplanır. Defterine kırmızı renkli...
+--------------------------------------------------
+Soru 39:
+  Dosya: soru_39_sayfa_12_sag.png
+  Sayfa: 12 (sag)
+  Boyut: 596x782
+  Metin: 39. Her birinin hacmi 75 birimküp olan kare dik prizma biçimindeki özdeş 6 parçanın kare şeklindeki ...
+--------------------------------------------------
+Soru 40:
+  Dosya: soru_40_sayfa_12_sag.png
+  Sayfa: 12 (sag)
+  Boyut: 596x785
+  Metin: 40. Bir kare dik prizmanın iki ayrıtının uzunlukları toplamı 24 birim, diğer ayrıtlarının uzunluklar...
+--------------------------------------------------

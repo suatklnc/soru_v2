@@ -279,6 +279,10 @@ class QuestionExtractor:
                 if self.is_instruction(text):
                     continue
                 
+                # Gerçek soru başlangıcı mı kontrol et
+                if not self.is_question_start(text, question_number):
+                    continue
+                
                 question_starts.append({
                     'number': question_number,
                     'start_index': i,
@@ -318,11 +322,39 @@ class QuestionExtractor:
         
         return questions
     
+    def is_question_start(self, text, question_number):
+        """Bir metnin gerçekten soru başlangıcı olup olmadığını kontrol eder"""
+        
+        # Soru başlangıcı karakteristikleri:
+        # 1. Satır başında olmalı
+        # 2. Sadece sayı ve nokta içermeli (veya "Soru" kelimesi)
+        # 3. Ardından boşluk ve büyük harf gelmeli
+        # 4. İçinde "saat", "dakika", "gün" gibi kelimeler olmamalı
+        
+        # Satır başında sayı kontrolü
+        if not re.match(r'^\d+\.\s*$|^Soru\s*\d+\s*$', text.strip()):
+            return False
+        
+        # İçinde soru içeriği olmamalı (sadece numara olmalı)
+        if len(text.strip()) > 10:  # Çok uzun ise soru içeriği var demektir
+            return False
+        
+        # Soru numarası 1-50 arasında olmalı
+        if not (1 <= question_number <= 50):
+            return False
+        
+        return True
+    
     def has_math_content(self, line):
         """Satırda matematik içeriği var mı kontrol eder - talimatları hariç tutar"""
         
-        # Önce talimat mı kontrol et
-        if self.is_instruction(line):
+        # Önce basit talimat kontrolü (recursion'ı önlemek için)
+        instruction_keywords = [
+            'Bu testte', 'Cevaplarınızı', 'Test süresi', 'Sınav başlamadan',
+            'Talimatlar', 'Yönergeler', 'işaretleyiniz'
+        ]
+        
+        if any(keyword in line for keyword in instruction_keywords):
             return False
         
         # Matematik içeriği kontrolü
@@ -361,9 +393,12 @@ class QuestionExtractor:
         
         # Ek kontrol: Eğer talimat pattern'i varsa ama matematik içeriği de varsa, bu bir soru olabilir
         if is_instruction_text:
-            # Matematik içeriği var mı kontrol et
-            has_math = self.has_math_content(line)
-            if has_math:
+            # Basit matematik kontrolü (recursion'ı önlemek için)
+            has_numbers = bool(re.search(r'[0-9]', line))
+            has_math_operators = bool(re.search(r'[+\-*/=]', line))
+            has_question_words = bool(re.search(r'(kaçtır|bulunuz|hesaplayınız|olduğuna göre)', line))
+            
+            if has_numbers and (has_math_operators or has_question_words):
                 return False  # Matematik içeriği varsa soru olarak kabul et
         
         return is_instruction_text
@@ -512,16 +547,16 @@ class QuestionExtractor:
             if next_question_y is not None:
                 # Bir sonraki soru bulundu, onun başlangıcına kadar genişlet
                 # Ama biraz margin bırak
-                margin = 30
-                end_y = max(y0 + 120, next_question_y - margin)  # Minimum 120px yükseklik
+                margin = 20
+                end_y = max(y0 + 150, next_question_y - margin)  # Minimum 150px yükseklik
             else:
                 # Bir sonraki soru bulunamadı, şıklar için daha fazla alan bırak
                 text_length = len(question['full_text'])
                 # Şıklar için ekstra alan ekle
                 if question.get('has_choices', False):
-                    estimated_height = max(200, text_length * 0.6 + 150)  # Şıklar için daha fazla alan
+                    estimated_height = max(250, text_length * 0.8 + 200)  # Şıklar için daha fazla alan
                 else:
-                    estimated_height = max(150, text_length * 0.8 + 100)
+                    estimated_height = max(200, text_length * 1.0 + 150)
                 end_y = min(page.rect.height, y0 + estimated_height)
             
             # SADECE YÜKSEKLİK GENİŞLET - Genişlik değişmez
@@ -548,17 +583,40 @@ class QuestionExtractor:
             # Sonraki soru numarası
             next_question_num = current_question_num + 1
             
+            # Tüm metin bloklarını topla ve sırala
+            text_blocks = []
             for block in text_dict["blocks"]:
                 if "lines" in block:
                     for line in block["lines"]:
                         for span in line["spans"]:
                             text = span["text"].strip()
-                            
-                            # Sonraki soru numarasını ara
-                            if (str(next_question_num) in text and 
-                                ('.' in text or 'Soru' in text) and
-                                not self.is_instruction(text)):
-                                return span["bbox"][1]  # Y pozisyonu
+                            if text:
+                                text_blocks.append({
+                                    'text': text,
+                                    'bbox': span["bbox"],
+                                    'y': span["bbox"][1]
+                                })
+            
+            # Y pozisyonuna göre sırala
+            text_blocks.sort(key=lambda x: x['y'])
+            
+            # Sonraki soru numarasını ara
+            for block in text_blocks:
+                text = block['text']
+                
+                # Soru numarası pattern'leri
+                question_patterns = [
+                    r'^(\d+)\.\s*',  # "1. " gibi
+                    r'^Soru\s*(\d+)',  # "Soru 1" gibi
+                    r'^(\d+)\s*-\s*',  # "1 - " gibi
+                ]
+                
+                for pattern in question_patterns:
+                    match = re.search(pattern, text)
+                    if match:
+                        question_number = int(match.group(1))
+                        if question_number == next_question_num and not self.is_instruction(text):
+                            return block['y']
             
             return None
             

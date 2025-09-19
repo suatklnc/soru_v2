@@ -1,12 +1,12 @@
 === TOPLU PDF İŞLEME RAPORU ===
 
-Başlangıç Zamanı: 2025-09-19 22:54:06.487065
-Bitiş Zamanı: 2025-09-19 22:54:11.936649
-Toplam Süre: 5.45 saniye
-Toplam PDF: 4
-Başarılı: 4
+Başlangıç Zamanı: 2025-09-19 23:43:46.390508
+Bitiş Zamanı: 2025-09-19 23:43:56.214615
+Toplam Süre: 9.82 saniye
+Toplam PDF: 5
+Başarılı: 5
 Başarısız: 0
-Toplam Soru: 134
+Toplam Soru: 174
 
 === DETAYLI SONUÇLAR ===
 
@@ -40,4 +40,12 @@ Durum: success
 Soru Sayısı: 14
 Sol Taraf: 7
 Sağ Taraf: 7
+--------------------------------------------------
+
+PDF: yks_tyt_2025_kitapcik_d250.pdf
+Durum: success
+Çıktı Klasörü: output\yks_tyt_2025_kitapcik_d250
+Soru Sayısı: 40
+Sol Taraf: 21
+Sağ Taraf: 19
 --------------------------------------------------
