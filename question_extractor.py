@@ -611,9 +611,147 @@ class QuestionExtractor:
         
         print(f"Soru listesi kaydedildi: {output_file}")
 
-# Kullanım örneği
-def main():
-    # Dizindeki PDF dosyasını otomatik bul
+# Çoklu PDF işleme fonksiyonu
+def process_multiple_pdfs(pdf_directory=".", output_base_dir="output"):
+    """Birden fazla PDF dosyasını toplu olarak işler"""
+    
+    import glob
+    import os
+    from datetime import datetime
+    
+    # PDF dosyalarını bul
+    pdf_files = glob.glob(os.path.join(pdf_directory, "*.pdf"))
+    
+    # processed_sorular.pdf'yi hariç tut
+    pdf_files = [f for f in pdf_files if not f.endswith("processed_sorular.pdf")]
+    
+    if not pdf_files:
+        print("Dizinde PDF dosyası bulunamadı!")
+        return None
+    
+    print(f"Toplam {len(pdf_files)} PDF dosyası bulundu:")
+    for i, pdf_file in enumerate(pdf_files, 1):
+        print(f"  {i}. {os.path.basename(pdf_file)}")
+    
+    # Çıktı klasörünü oluştur
+    if not os.path.exists(output_base_dir):
+        os.makedirs(output_base_dir)
+    
+    # Toplu işlem raporu
+    batch_report = {
+        'start_time': datetime.now(),
+        'total_files': len(pdf_files),
+        'processed_files': 0,
+        'failed_files': 0,
+        'total_questions': 0,
+        'results': []
+    }
+    
+    # Her PDF'i işle
+    for i, pdf_path in enumerate(pdf_files, 1):
+        print(f"\n{'='*60}")
+        print(f"PDF {i}/{len(pdf_files)}: {os.path.basename(pdf_path)}")
+        print(f"{'='*60}")
+        
+        try:
+            # PDF adından çıktı klasörü oluştur
+            pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
+            output_dir = os.path.join(output_base_dir, pdf_name)
+            
+            # Question extractor oluştur
+            extractor = QuestionExtractor(pdf_path)
+            
+            # PDF'i ön işleme tabi tut
+            print("PDF ön işleme başlıyor...")
+            processed_doc = extractor.preprocess_pdf()
+            
+            # İşlenmiş PDF'i kaydet
+            processed_pdf_path = os.path.join(output_dir, f"processed_{pdf_name}.pdf")
+            os.makedirs(output_dir, exist_ok=True)
+            processed_doc.save(processed_pdf_path)
+            print(f"İşlenmiş PDF kaydedildi: {processed_pdf_path}")
+            
+            # Tüm soruları çıkar
+            print("Soru çıkarma başlıyor...")
+            questions = extractor.extract_all_questions(output_dir)
+            
+            # İstatistikleri al
+            stats = extractor.get_question_statistics()
+            
+            # Soru listesini kaydet
+            question_list_path = os.path.join(output_dir, "question_list.txt")
+            extractor.save_question_list(question_list_path)
+            
+            # Sonuçları rapora ekle
+            result = {
+                'pdf_name': os.path.basename(pdf_path),
+                'output_dir': output_dir,
+                'total_questions': stats['total_questions'],
+                'questions_by_side': stats['questions_by_side'],
+                'question_numbers': stats['question_numbers'],
+                'status': 'success'
+            }
+            batch_report['results'].append(result)
+            batch_report['processed_files'] += 1
+            batch_report['total_questions'] += stats['total_questions']
+            
+            print(f"✅ Başarıyla tamamlandı: {stats['total_questions']} soru çıkarıldı")
+            
+        except Exception as e:
+            print(f"❌ Hata oluştu: {str(e)}")
+            result = {
+                'pdf_name': os.path.basename(pdf_path),
+                'error': str(e),
+                'status': 'failed'
+            }
+            batch_report['results'].append(result)
+            batch_report['failed_files'] += 1
+    
+    # Toplu işlem raporunu kaydet
+    batch_report['end_time'] = datetime.now()
+    batch_report['duration'] = (batch_report['end_time'] - batch_report['start_time']).total_seconds()
+    
+    # Raporu kaydet
+    report_path = os.path.join(output_base_dir, "batch_report.txt")
+    with open(report_path, 'w', encoding='utf-8') as f:
+        f.write("=== TOPLU PDF İŞLEME RAPORU ===\n\n")
+        f.write(f"Başlangıç Zamanı: {batch_report['start_time']}\n")
+        f.write(f"Bitiş Zamanı: {batch_report['end_time']}\n")
+        f.write(f"Toplam Süre: {batch_report['duration']:.2f} saniye\n")
+        f.write(f"Toplam PDF: {batch_report['total_files']}\n")
+        f.write(f"Başarılı: {batch_report['processed_files']}\n")
+        f.write(f"Başarısız: {batch_report['failed_files']}\n")
+        f.write(f"Toplam Soru: {batch_report['total_questions']}\n\n")
+        
+        f.write("=== DETAYLI SONUÇLAR ===\n")
+        for result in batch_report['results']:
+            f.write(f"\nPDF: {result['pdf_name']}\n")
+            f.write(f"Durum: {result['status']}\n")
+            if result['status'] == 'success':
+                f.write(f"Çıktı Klasörü: {result['output_dir']}\n")
+                f.write(f"Soru Sayısı: {result['total_questions']}\n")
+                f.write(f"Sol Taraf: {result['questions_by_side']['sol']}\n")
+                f.write(f"Sağ Taraf: {result['questions_by_side']['sag']}\n")
+            else:
+                f.write(f"Hata: {result['error']}\n")
+            f.write("-" * 50 + "\n")
+    
+    print(f"\n{'='*60}")
+    print("TOPLU İŞLEM TAMAMLANDI")
+    print(f"{'='*60}")
+    print(f"Toplam PDF: {batch_report['total_files']}")
+    print(f"Başarılı: {batch_report['processed_files']}")
+    print(f"Başarısız: {batch_report['failed_files']}")
+    print(f"Toplam Soru: {batch_report['total_questions']}")
+    print(f"Süre: {batch_report['duration']:.2f} saniye")
+    print(f"Rapor: {report_path}")
+    
+    return batch_report
+
+# Tek PDF işleme fonksiyonu (eski main fonksiyonu)
+def process_single_pdf():
+    """Tek PDF dosyasını işler (eski main fonksiyonu)"""
+    
     import glob
     pdf_files = glob.glob("*.pdf")
     
@@ -656,5 +794,10 @@ def main():
     
     return questions, stats
 
+# Ana fonksiyon
+def main():
+    """Ana fonksiyon - çoklu PDF işleme"""
+    return process_multiple_pdfs()
+
 if __name__ == "__main__":
-    questions, stats = main()
+    result = main()

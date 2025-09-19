@@ -1,0 +1,27 @@
+=== TOPLU PDF İŞLEME RAPORU ===
+
+Başlangıç Zamanı: 2025-09-19 22:28:53.561207
+Bitiş Zamanı: 2025-09-19 22:28:57.789920
+Toplam Süre: 4.23 saniye
+Toplam PDF: 2
+Başarılı: 2
+Başarısız: 0
+Toplam Soru: 80
+
+=== DETAYLI SONUÇLAR ===
+
+PDF: 2015-YGS.pdf
+Durum: success
+Çıktı Klasörü: output\2015-YGS
+Soru Sayısı: 40
+Sol Taraf: 22
+Sağ Taraf: 18
+--------------------------------------------------
+
+PDF: sorular.pdf
+Durum: success
+Çıktı Klasörü: output\sorular
+Soru Sayısı: 40
+Sol Taraf: 22
+Sağ Taraf: 18
+--------------------------------------------------
