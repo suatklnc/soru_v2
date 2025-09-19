@@ -557,8 +557,8 @@ class QuestionExtractor:
                         for span in line["spans"]:
                             text = span["text"]
                             
-                            # Soru numarasını içeren span'ı bul
-                            if question_number in text and ('.' in text or 'Soru' in text):
+                            # Soru numarasını içeren span'ı bul - sadece "X." formatında
+                            if text.strip() == f"{question_number}.":
                                 # Bu span'ın pozisyonunu al
                                 bbox = span["bbox"]
                                 
@@ -579,6 +579,11 @@ class QuestionExtractor:
             # Başlangıç pozisyonu
             x0, y0, x1, y1 = start_bbox
             
+            # Soru numarasını da dahil etmek için üst kenarı biraz yukarı çek
+            # Soru numarası genellikle soru metninden 10-20 piksel yukarıda olur
+            question_number_margin = 15  # Soru numarası için ekstra alan (daha az margin)
+            start_y = max(0, y0 - question_number_margin)
+            
             # Bir sonraki sorunun başlangıcını bul
             next_question_y = self.find_next_question_start(page, question['number'])
             
@@ -586,7 +591,7 @@ class QuestionExtractor:
                 # Bir sonraki soru bulundu, onun başlangıcına kadar genişlet
                 # Ama biraz margin bırak
                 margin = 20
-                end_y = max(y0 + 150, next_question_y - margin)  # Minimum 150px yükseklik
+                end_y = max(start_y + 150, next_question_y - margin)  # Minimum 150px yükseklik
             else:
                 # Bir sonraki soru bulunamadı, şıklar için daha fazla alan bırak
                 text_length = len(question['full_text'])
@@ -595,12 +600,12 @@ class QuestionExtractor:
                     estimated_height = max(250, text_length * 0.8 + 200)  # Şıklar için daha fazla alan
                 else:
                     estimated_height = max(200, text_length * 1.0 + 150)
-                end_y = min(page.rect.height, y0 + estimated_height)
+                end_y = min(page.rect.height, start_y + estimated_height)
             
             # SADECE YÜKSEKLİK GENİŞLET - Genişlik değişmez
             expanded_rect = fitz.Rect(
                 x0,  # Sol kenar aynı
-                y0,  # Üst kenar aynı
+                start_y,  # Üst kenar - soru numarası dahil
                 x1,  # Sağ kenar aynı (genişlik değişmez)
                 end_y  # Bir sonraki soruya kadar veya hesaplanan yükseklik
             )
