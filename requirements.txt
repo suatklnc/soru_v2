@@ -1,0 +1,6 @@
+PyMuPDF==1.23.14
+opencv-python==4.8.1.78
+Pillow==10.0.1
+pytesseract==0.3.10
+python-telegram-bot==20.7
+requests==2.31.0
