@@ -99,11 +99,11 @@ class QuestionExtractor:
             reference_y = third_question_y
             print(f"3. soru pozisyonu kullanılıyor: y={reference_y}")
         
-        # Talimat kutusunun alt sınırı = 1. ve 3. soruların hizasından biraz yukarı
-        instruction_bottom_y = min(first_question_y, reference_y) - 30  # 30 piksel margin
+        # Talimat kutusunun alt sınırı = 1. sorunun hemen üstünden (çok küçük margin)
+        instruction_bottom_y = first_question_y - 5  # Sadece 5 piksel margin - 1. sorunun hemen üstü
         
         print(f"Talimat kutusu alt sınırı hesaplandı: y={instruction_bottom_y}")
-        print(f"(1. soru: y={first_question_y}, referans: y={reference_y})")
+        print(f"(1. soru: y={first_question_y}, kesme noktası: y={instruction_bottom_y})")
         return instruction_bottom_y
     
     def remove_top_section_from_first_page(self):
@@ -257,8 +257,8 @@ class QuestionExtractor:
             r'^(\d+)\s*-\s*',  # "1 - " gibi
         ]
         
-        current_question = None
-        
+        # Önce tüm soru numaralarını ve pozisyonlarını bul
+        question_starts = []
         for i, block in enumerate(text_blocks):
             text = block['text']
             
@@ -279,35 +279,42 @@ class QuestionExtractor:
                 if self.is_instruction(text):
                     continue
                 
-                # Aynı soru numarası zaten var mı kontrol et
-                existing_question = any(q['number'] == question_number for q in questions)
-                if existing_question:
-                    continue
-                
-                # Önceki soruyu kaydet
-                if current_question:
-                    questions.append(current_question)
-                
-                # Yeni soru başlat
-                current_question = {
+                question_starts.append({
                     'number': question_number,
+                    'start_index': i,
                     'start_bbox': block['bbox'],
-                    'text': text,
-                    'page': page_num,
-                    'full_text': text,
-                    'start_index': i
-                }
-            elif current_question:
-                # Mevcut soruya devam et - şıkları da dahil et
-                current_question['full_text'] += ' ' + text
+                    'start_text': text
+                })
+        
+        # Her soru için içeriği topla
+        for i, q_start in enumerate(question_starts):
+            start_idx = q_start['start_index']
+            end_idx = question_starts[i + 1]['start_index'] if i + 1 < len(question_starts) else len(text_blocks)
+            
+            # Bu soruya ait tüm metinleri topla
+            question_text_parts = []
+            has_choices = False
+            
+            for j in range(start_idx, end_idx):
+                block = text_blocks[j]
+                text = block['text']
+                question_text_parts.append(text)
                 
                 # Şık pattern'i kontrol et
                 if re.search(r'^[A-E]\)\s*', text):
-                    current_question['has_choices'] = True
-        
-        # Son soruyu kaydet
-        if current_question:
-            questions.append(current_question)
+                    has_choices = True
+            
+            # Soru bilgilerini oluştur
+            question = {
+                'number': q_start['number'],
+                'start_bbox': q_start['start_bbox'],
+                'text': q_start['start_text'],
+                'page': page_num,
+                'full_text': ' '.join(question_text_parts),
+                'has_choices': has_choices
+            }
+            
+            questions.append(question)
         
         return questions
     
@@ -337,18 +344,29 @@ class QuestionExtractor:
     def is_instruction(self, line):
         """Satırın talimat mı soru mu olduğunu kontrol eder"""
         
-        # Çok spesifik talimat pattern'leri
+        # Çok spesifik talimat pattern'leri - sadece gerçek talimatlar
         instruction_patterns = [
             r'^\d+\.\s*Bu testte \d+ soru vardır',
-            r'^\d+\.\s*Cevaplarınızı, cevap kâğıdının Temel Matemati',
+            r'^\d+\.\s*Cevaplarınızı, cevap kâğıdının Temel Matematik Testi için ayrılan kısmına işaretleyiniz\.',
             r'^\d+\.\s*Test süresi',
             r'^\d+\.\s*Sınav başlamadan önce',
             r'^\d+\.\s*Talimatlar',
-            r'^\d+\.\s*Yönergeler'
+            r'^\d+\.\s*Yönergeler',
+            r'^\d+\.\s*Bu testte',
+            r'^\d+\.\s*Cevaplarınızı.*işaretleyiniz'
         ]
         
         # Sadece tam eşleşme kontrol et
-        return any(re.search(pattern, line) for pattern in instruction_patterns)
+        is_instruction_text = any(re.search(pattern, line) for pattern in instruction_patterns)
+        
+        # Ek kontrol: Eğer talimat pattern'i varsa ama matematik içeriği de varsa, bu bir soru olabilir
+        if is_instruction_text:
+            # Matematik içeriği var mı kontrol et
+            has_math = self.has_math_content(line)
+            if has_math:
+                return False  # Matematik içeriği varsa soru olarak kabul et
+        
+        return is_instruction_text
     
     def is_end_of_question(self, line, lines, line_num):
         """Soru bitti mi kontrol eder - şıklar dahil"""

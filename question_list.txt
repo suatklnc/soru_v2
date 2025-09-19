@@ -3,19 +3,19 @@
 Soru 1:
   Dosya: soru_1_sayfa_1_sol.png
   Sayfa: 1 (sol)
-  Boyut: 596x514
+  Boyut: 596x504
   Metin: 1. olduğuna göre,  m  kaçtır? A) B) C) D) E) 3 4 5 6 7
 --------------------------------------------------
 Soru 2:
   Dosya: soru_2_sayfa_1_sol.png
   Sayfa: 1 (sol)
-  Boyut: 596x408
+  Boyut: 596x441
   Metin: 2. işleminin sonucu kaçtır? A) B) C) 0,06 0,08 0,1 E) D) 0,12 0,14 27
 --------------------------------------------------
 Soru 3:
   Dosya: soru_3_sayfa_1_sag.png
   Sayfa: 1 (sag)
-  Boyut: 596x497
+  Boyut: 596x487
   Metin: 3. olduğuna göre,  a  kaçtır? A) B) C) E) D)
 --------------------------------------------------
 Soru 4:
