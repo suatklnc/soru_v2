@@ -1,8 +1,8 @@
 import os
 import random
 import glob
-from telegram import Update
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 import logging
 
 # Logging ayarları
@@ -88,6 +88,33 @@ class QuestionBot:
 # Bot instance
 bot_instance = None
 
+def create_main_keyboard():
+    """Ana menü butonlarını oluştur"""
+    keyboard = [
+        [
+            InlineKeyboardButton("🎲 Yeni Soru", callback_data="new_question"),
+            InlineKeyboardButton("📊 İstatistik", callback_data="stats")
+        ],
+        [
+            InlineKeyboardButton("🆘 Yardım", callback_data="help"),
+            InlineKeyboardButton("ℹ️ Bot Bilgisi", callback_data="info")
+        ]
+    ]
+    return InlineKeyboardMarkup(keyboard)
+
+def create_question_keyboard():
+    """Soru menüsü butonlarını oluştur"""
+    keyboard = [
+        [
+            InlineKeyboardButton("🎲 Başka Soru", callback_data="new_question"),
+            InlineKeyboardButton("📊 İstatistik", callback_data="stats")
+        ],
+        [
+            InlineKeyboardButton("🏠 Ana Menü", callback_data="main_menu")
+        ]
+    ]
+    return InlineKeyboardMarkup(keyboard)
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Bot başlatma komutu"""
     welcome_message = """
@@ -95,14 +122,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 Merhaba! Ben matematik soruları gönderen bir botum.
 
-**Komutlar:**
-/soru - Rastgele bir matematik sorusu gönder
-/istatistik - Bot istatistiklerini göster
-/yardim - Yardım menüsü
-
-Hazır mısın? /soru komutu ile başlayalım! 🚀
+Aşağıdaki butonları kullanarak kolayca navigasyon yapabilirsiniz! 🚀
     """
-    await update.message.reply_text(welcome_message, parse_mode='Markdown')
+    await update.message.reply_text(
+        welcome_message, 
+        parse_mode='Markdown',
+        reply_markup=create_main_keyboard()
+    )
 
 async def send_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Rastgele soru gönder"""
@@ -133,7 +159,8 @@ async def send_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_photo(
                 photo=photo,
                 caption=caption,
-                parse_mode='Markdown'
+                parse_mode='Markdown',
+                reply_markup=create_question_keyboard()
             )
             
         logger.info(f"Soru gönderildi: {question_info['filename']}")
@@ -193,6 +220,66 @@ Sorularınız için: @your_username
     """
     await update.message.reply_text(help_message, parse_mode='Markdown')
 
+async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Buton tıklama işleyicisi"""
+    query = update.callback_query
+    await query.answer()
+    
+    if query.data == "new_question":
+        await send_question(update, context)
+    elif query.data == "stats":
+        await show_stats(update, context)
+    elif query.data == "help":
+        help_message = """
+🆘 **Yardım Menüsü**
+
+**Butonlar:**
+🎲 Yeni Soru - Rastgele matematik sorusu gönder
+📊 İstatistik - Bot istatistiklerini göster
+🆘 Yardım - Bu yardım menüsü
+ℹ️ Bot Bilgisi - Bot hakkında bilgi
+
+**Nasıl Kullanılır:**
+1. "Yeni Soru" butonuna tıklayın
+2. Bot size rastgele bir matematik sorusu gönderir
+3. Soruyu çözmeye çalışın!
+
+**Not:** Bot, output klasöründeki tüm soruları rastgele seçer.
+        """
+        await query.edit_message_text(help_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
+    elif query.data == "info":
+        info_message = """
+ℹ️ **Bot Bilgisi**
+
+🤖 **Matematik Soru Botu**
+📚 **Toplam Soru:** 134 soru
+📁 **PDF Kaynakları:** 3 farklı PDF
+🔄 **Güncelleme:** Otomatik
+⚡ **Hız:** Anında yanıt
+
+**Özellikler:**
+✅ Rastgele soru seçimi
+✅ PDF kaynak bilgisi
+✅ Kolay navigasyon
+✅ Hızlı erişim
+
+**Geliştirici:** @suatklnc
+        """
+        await query.edit_message_text(info_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
+    elif query.data == "main_menu":
+        welcome_message = """
+🎓 **Matematik Soru Botu** 🎓
+
+Merhaba! Ben matematik soruları gönderen bir botum.
+
+Aşağıdaki butonları kullanarak kolayca navigasyon yapabilirsiniz! 🚀
+        """
+        await query.edit_message_text(
+            welcome_message, 
+            parse_mode='Markdown',
+            reply_markup=create_main_keyboard()
+        )
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Genel mesaj işleyici"""
     message_text = update.message.text.lower()
@@ -227,6 +314,9 @@ def main():
     application.add_handler(CommandHandler("soru", send_question))
     application.add_handler(CommandHandler("istatistik", show_stats))
     application.add_handler(CommandHandler("yardim", help_command))
+    
+    # Callback query handler (butonlar için)
+    application.add_handler(CallbackQueryHandler(button_callback))
     
     # Message handler
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
