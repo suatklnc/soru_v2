@@ -50,6 +50,18 @@ class QuestionBot:
             # soru_23_sayfa_6_sag.png -> Soru 23, Sayfa 6, Sağ
             parts = filename.replace('.png', '').split('_')
             
+            # PDF adını bul (dosya yolundan)
+            pdf_name = "Bilinmiyor"
+            try:
+                # output/2015-YGS/soru_23_sayfa_6_sag.png -> 2015-YGS
+                path_parts = file_path.replace(os.sep, '/').split('/')
+                for i, part in enumerate(path_parts):
+                    if part == 'output' and i + 1 < len(path_parts):
+                        pdf_name = path_parts[i + 1]
+                        break
+            except:
+                pass
+            
             if len(parts) >= 4:
                 question_num = parts[1]
                 page_num = parts[3]
@@ -59,7 +71,8 @@ class QuestionBot:
                     'number': question_num,
                     'page': page_num,
                     'side': side,
-                    'filename': filename
+                    'filename': filename,
+                    'pdf_name': pdf_name
                 }
         except Exception as e:
             logger.error(f"Soru bilgisi çıkarılırken hata: {e}")
@@ -68,7 +81,8 @@ class QuestionBot:
             'number': '?',
             'page': '?',
             'side': '?',
-            'filename': os.path.basename(file_path)
+            'filename': os.path.basename(file_path),
+            'pdf_name': 'Bilinmiyor'
         }
 
 # Bot instance
@@ -112,7 +126,8 @@ async def send_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Dosyayı gönder
         with open(question_file, 'rb') as photo:
             caption = f"📚 **Soru {question_info['number']}**\n"
-            caption += f"📄 Sayfa: {question_info['page']}\n\n"
+            caption += f"📄 Sayfa: {question_info['page']}\n"
+            caption += f"📁 Kaynak: {question_info['pdf_name']}\n\n"
             caption += "Başarılar! 🍀"
             
             await update.message.reply_photo(
