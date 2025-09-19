@@ -199,26 +199,56 @@ class QuestionExtractor:
         # İşlenmiş PDF'i kullan
         doc_to_use = self.processed_doc if self.processed_doc else self.doc
         
+        # Tüm soruları topla
+        all_questions = []
         for page_num in range(len(doc_to_use)):
             page = doc_to_use.load_page(page_num)
-            
-            # Sayfa metnini al
             page_text = page.get_text()
-            
-            # Soruları tespit et
             questions_on_page = self.detect_questions_on_page(page, page_text, page_num)
-            
-            # Her soruyu ayrı görsel olarak kaydet
-            for i, question in enumerate(questions_on_page):
-                self.extract_question_as_image(page, question, page_num, i, output_dir)
+            all_questions.extend(questions_on_page)
+        
+        # Benzersiz soru numaralarını filtrele
+        unique_questions = {}
+        for question in all_questions:
+            q_num = question['number']
+            if q_num not in unique_questions:
+                unique_questions[q_num] = question
+        
+        # Benzersiz soruları sırala ve çıkar
+        sorted_questions = sorted(unique_questions.values(), key=lambda x: x['number'])
+        
+        for question in sorted_questions:
+            page_num = question['page']
+            page = doc_to_use.load_page(page_num)
+            self.extract_question_as_image(page, question, page_num, 0, output_dir)
         
         print(f"Toplam {len(self.questions)} soru çıkarıldı.")
         return self.questions
     
     def detect_questions_on_page(self, page, page_text, page_num):
-        """Sayfadaki soruları tespit eder"""
+        """Sayfadaki soruları tespit eder - şıklar dahil"""
         
         questions = []
+        
+        # Sayfa metnini dict formatında al (pozisyon bilgisi için)
+        text_dict = page.get_text("dict")
+        
+        # Tüm metin bloklarını topla ve sırala
+        text_blocks = []
+        for block in text_dict["blocks"]:
+            if "lines" in block:
+                for line in block["lines"]:
+                    for span in line["spans"]:
+                        text = span["text"].strip()
+                        if text:
+                            text_blocks.append({
+                                'text': text,
+                                'bbox': span["bbox"],
+                                'y': span["bbox"][1]  # Y pozisyonu
+                            })
+        
+        # Y pozisyonuna göre sırala
+        text_blocks.sort(key=lambda x: x['y'])
         
         # Soru numarası pattern'leri
         question_patterns = [
@@ -227,27 +257,31 @@ class QuestionExtractor:
             r'^(\d+)\s*-\s*',  # "1 - " gibi
         ]
         
-        # Metni satırlara böl
-        lines = page_text.split('\n')
-        
         current_question = None
         
-        for line_num, line in enumerate(lines):
-            line = line.strip()
-            if not line:
-                continue
-                
+        for i, block in enumerate(text_blocks):
+            text = block['text']
+            
             # Soru numarası var mı kontrol et
             question_number = None
             for pattern in question_patterns:
-                match = re.search(pattern, line)
+                match = re.search(pattern, text)
                 if match:
                     question_number = int(match.group(1))
-                    break
+                    # Geçerli soru numarası mı? (1-50 arası)
+                    if 1 <= question_number <= 50:
+                        break
+                    else:
+                        question_number = None
             
             if question_number:
                 # Talimat mı kontrol et
-                if self.is_instruction(line):
+                if self.is_instruction(text):
+                    continue
+                
+                # Aynı soru numarası zaten var mı kontrol et
+                existing_question = any(q['number'] == question_number for q in questions)
+                if existing_question:
                     continue
                 
                 # Önceki soruyu kaydet
@@ -257,14 +291,19 @@ class QuestionExtractor:
                 # Yeni soru başlat
                 current_question = {
                     'number': question_number,
-                    'start_line': line_num,
-                    'text': line,
+                    'start_bbox': block['bbox'],
+                    'text': text,
                     'page': page_num,
-                    'full_text': line
+                    'full_text': text,
+                    'start_index': i
                 }
             elif current_question:
-                # Mevcut soruya devam et
-                current_question['full_text'] += ' ' + line
+                # Mevcut soruya devam et - şıkları da dahil et
+                current_question['full_text'] += ' ' + text
+                
+                # Şık pattern'i kontrol et
+                if re.search(r'^[A-E]\)\s*', text):
+                    current_question['has_choices'] = True
         
         # Son soruyu kaydet
         if current_question:
@@ -443,25 +482,36 @@ class QuestionExtractor:
             return None
     
     def expand_question_area(self, page, start_bbox, question):
-        """Soru alanını genişletir - şıklar dahil"""
+        """Soru alanını genişletir - şıklar dahil, bir sonraki soruya kadar"""
         
         try:
             # Başlangıç pozisyonu
             x0, y0, x1, y1 = start_bbox
             
-            # Şıkları da dahil etmek için daha büyük alan hesapla
-            text_length = len(question['full_text'])
+            # Bir sonraki sorunun başlangıcını bul
+            next_question_y = self.find_next_question_start(page, question['number'])
             
-            # Şıklar için ekstra alan ekle
-            # A) B) C) D) E) şıkları için yaklaşık 4-5 satır daha
-            estimated_height = max(150, text_length * 0.8 + 100)  # Minimum 150px, şıklar için +100px
+            if next_question_y is not None:
+                # Bir sonraki soru bulundu, onun başlangıcına kadar genişlet
+                # Ama biraz margin bırak
+                margin = 30
+                end_y = max(y0 + 120, next_question_y - margin)  # Minimum 120px yükseklik
+            else:
+                # Bir sonraki soru bulunamadı, şıklar için daha fazla alan bırak
+                text_length = len(question['full_text'])
+                # Şıklar için ekstra alan ekle
+                if question.get('has_choices', False):
+                    estimated_height = max(200, text_length * 0.6 + 150)  # Şıklar için daha fazla alan
+                else:
+                    estimated_height = max(150, text_length * 0.8 + 100)
+                end_y = min(page.rect.height, y0 + estimated_height)
             
             # SADECE YÜKSEKLİK GENİŞLET - Genişlik değişmez
             expanded_rect = fitz.Rect(
                 x0,  # Sol kenar aynı
                 y0,  # Üst kenar aynı
                 x1,  # Sağ kenar aynı (genişlik değişmez)
-                min(page.rect.height, y0 + estimated_height)  # Şıklar dahil alt kenar genişlet
+                end_y  # Bir sonraki soruya kadar veya hesaplanan yükseklik
             )
             
             return expanded_rect
@@ -469,6 +519,34 @@ class QuestionExtractor:
         except Exception as e:
             print(f"Alan genişletme hatası: {e}")
             return fitz.Rect(start_bbox)
+    
+    def find_next_question_start(self, page, current_question_num):
+        """Bir sonraki sorunun başlangıç pozisyonunu bulur"""
+        
+        try:
+            # Sayfa metnini dict formatında al
+            text_dict = page.get_text("dict")
+            
+            # Sonraki soru numarası
+            next_question_num = current_question_num + 1
+            
+            for block in text_dict["blocks"]:
+                if "lines" in block:
+                    for line in block["lines"]:
+                        for span in line["spans"]:
+                            text = span["text"].strip()
+                            
+                            # Sonraki soru numarasını ara
+                            if (str(next_question_num) in text and 
+                                ('.' in text or 'Soru' in text) and
+                                not self.is_instruction(text)):
+                                return span["bbox"][1]  # Y pozisyonu
+            
+            return None
+            
+        except Exception as e:
+            print(f"Sonraki soru bulma hatası: {e}")
+            return None
     
     def get_question_statistics(self):
         """Soru istatistiklerini döndürür"""

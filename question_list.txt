@@ -3,240 +3,240 @@
 Soru 1:
   Dosya: soru_1_sayfa_1_sol.png
   Sayfa: 1 (sol)
-  Boyut: 596x372
-  Metin: 1. 0,2 0,025 0,5 − işleminin sonucu kaçtır? A) 3 5 B) 4 5 C) 7 20 D) 8 25 E) 12 25
+  Boyut: 596x514
+  Metin: 1. olduğuna göre,  m  kaçtır? A) B) C) D) E) 3 4 5 6 7
 --------------------------------------------------
 Soru 2:
   Dosya: soru_2_sayfa_1_sol.png
   Sayfa: 1 (sol)
-  Boyut: 596x401
-  Metin: 2. 3 5 2 5 5 2 3 2 ⎛ ⎞ − ⎜ ⎟ ⎝ ⎠ ⎛ ⎞ − ⎜ ⎟ ⎝ ⎠ işleminin sonucu kaçtır? A) 5 2 B) 7 2 C) 3 D) 5 E) 7
+  Boyut: 596x408
+  Metin: 2. işleminin sonucu kaçtır? A) B) C) 0,06 0,08 0,1 E) D) 0,12 0,14 27
 --------------------------------------------------
 Soru 3:
   Dosya: soru_3_sayfa_1_sag.png
   Sayfa: 1 (sag)
-  Boyut: 596x372
-  Metin: 3. 6 2 3 3 1 − + işleminin sonucu kaçtır? A) 3 B) 2 3 C) 3 1 − D) 3 1 + E) 2 3 1 −
+  Boyut: 596x497
+  Metin: 3. olduğuna göre,  a  kaçtır? A) B) C) E) D)
 --------------------------------------------------
 Soru 4:
   Dosya: soru_4_sayfa_1_sag.png
   Sayfa: 1 (sag)
-  Boyut: 596x401
-  Metin: 4. ( ) ( ) + − − 2 2 a 1 a 1 ifadesi aşağıdakilerden hangisine eşittir? A) a B) 2a C) 3a D) 4a E) 5a
+  Boyut: 596x503
+  Metin: 4. Solda verilen çıkarma işlemine göre, sağdaki çıkarma işleminin sonucu kaçtır? A) B) C) D) E) 44 3...
 --------------------------------------------------
 Soru 5:
   Dosya: soru_5_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x396
-  Metin: 5. 1 2 3 10 10 10 − − − + + işleminin sonucu kaçtır? A) 0,011 B) 0,101 C) 0,111 D) 0,123 E) 0,321
+  Boyut: 596x503
+  Metin: 5. a ve b birer gerçel sayı olmak üzere, olduğuna göre, toplamı kaçtır? A) B) C) D) E) 6 5 4 3 2
 --------------------------------------------------
 Soru 6:
   Dosya: soru_6_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x365
-  Metin: 6. 3n 5 (16) 8 = olduğuna göre,  n  kaçtır? A) 3 2 B) 4 3 C) 3 5 D) 5 4 E) 5 6
+  Boyut: 596x477
+  Metin: 6. x ve y gerçel sayıları için olduğuna göre, in y türünden eşiti aşağıdaki- lerden hangisidir? A) B...
 --------------------------------------------------
 Soru 7:
-  Dosya: soru_7_sayfa_2_sol.png
-  Sayfa: 2 (sol)
-  Boyut: 596x420
-  Metin: 7. 13 13 13 15 6 15 8 15 • • + + işleminin sonucu kaçtır? A) 15 15 B) 14 15 C) 13 14 15 • D) 13 10 1...
+  Dosya: soru_7_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x509
+  Metin: 7. x, y ve z gerçel sayıları için olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur? A) B) C)...
 --------------------------------------------------
 Soru 8:
   Dosya: soru_8_sayfa_2_sag.png
   Sayfa: 2 (sag)
-  Boyut: 596x392
-  Metin: 8. 1 1 3a 3b 2 8 − = + olduğuna göre, a b + toplamı kaçtır? A) 3 4 B) 5 6 C) 1 8 D) 5 8 E) 4 9
+  Boyut: 596x448
+  Metin: 8. olduğuna göre, ifadesinin değeri kaçtır? A) B) C) D) E) 0 1 2 8 Diğer sayfaya geçiniz.
 --------------------------------------------------
 Soru 9:
-  Dosya: soru_9_sayfa_2_sag.png
-  Sayfa: 2 (sag)
-  Boyut: 596x410
-  Metin: 9. 5 7 x 4 3 − < < eşitsizliğini sağlayan  x  tam sayılarının toplamı kaçtır? A) 2 − B) 1 − C) 0 D) ...
+  Dosya: soru_9_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x481
+  Metin: 9. olduğuna göre,  n  kaçtır? A) B) C) D) E) 9 10 12 13 15
 --------------------------------------------------
 Soru 10:
-  Dosya: soru_10_sayfa_2_sag.png
-  Sayfa: 2 (sag)
-  Boyut: 596x376
-  Metin: 10. 3 4 x 2y 7 x 2xy 21 − = − = olduğuna göre,  x  kaçtır? A) 3 B) 5 C) 7 D) 9 E) 11
+  Dosya: soru_10_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x449
+  Metin: 10. x ve y gerçel sayıları için olduğuna göre, toplamı kaçtır? A) B) C) D) E) 5 6 7 8 9 29
 --------------------------------------------------
 Soru 11:
-  Dosya: soru_11_sayfa_3_sol.png
-  Sayfa: 3 (sol)
-  Boyut: 596x448
-  Metin: 11. x ve y doğal sayıları için olduğuna göre, • x y  çarpımının 5’e bölümünden elde edilen kalan kaç...
+  Dosya: soru_11_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x481
+  Metin: 11. x, y ve z tam sayıları için olduğuna göre, toplamının alabileceği değerlerden 100’e en yakın ola...
 --------------------------------------------------
 Soru 12:
-  Dosya: soru_12_sayfa_3_sol.png
-  Sayfa: 3 (sol)
-  Boyut: 596x548
-  Metin: 12. a, b, x ve y pozitif birer sayı olmak üzere, 2 2 2 2 x b 2 a y a b 20 x y • = + = olduğuna göre,...
+  Dosya: soru_12_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x483
+  Metin: 12. olduğuna göre, A’yı tam bölen asal sayıların toplamı kaçtır? A) B) C) D) E) 16 18 20 22 24 9 Diğ...
 --------------------------------------------------
 Soru 13:
-  Dosya: soru_13_sayfa_3_sol.png
-  Sayfa: 3 (sol)
-  Boyut: 596x520
-  Metin: 13. x, y ve z gerçel sayıları için y 0 x y z > − > olduğuna göre, aşağıdakilerden hangisi her za- ma...
+  Dosya: soru_13_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x526
+  Metin: 13. Bir A kümesi ile ilgili aşağıdakiler bilinmektedir.  6 ardışık tek doğal sayıdan oluşmaktadır. ...
 --------------------------------------------------
 Soru 14:
-  Dosya: soru_14_sayfa_3_sag.png
-  Sayfa: 3 (sag)
-  Boyut: 596x411
-  Metin: 14. Aşağıdakilerden hangisi bir rasyonel sayıdır? A) + 2 1 B) − 2 2 1 C) 1 2 D) + 2 2 1 E) − − 2 2 2...
+  Dosya: soru_14_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x475
+  Metin: 14. p: q: r: önermeleri veriliyor. Buna göre, aşağıdaki bileşik önermelerden hangisi doğrudur? A) B)...
 --------------------------------------------------
 Soru 15:
-  Dosya: soru_15_sayfa_3_sag.png
-  Sayfa: 3 (sag)
-  Boyut: 596x401
-  Metin: 15. ( ) ( ) = = − 2 f x x g x 2x 1 fonksiyonları için ( ) ( ) g f 2 kaçtır? A) 0 B) 3 C) 5 D) 7 E) 9
+  Dosya: soru_15_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x459
+  Metin: 15. Birbirinden farklı a, 2, b, 9 ve 6 pozitif tam sayıları küçükten büyüğe doğru sıralandığında ort...
 --------------------------------------------------
 Soru 16:
-  Dosya: soru_16_sayfa_4_sol.png
-  Sayfa: 4 (sol)
-  Boyut: 596x674
-  Metin: 16. p, q ve r önermelerinin değilleri sırasıyla ′ ′ ′ p , q , r ile gösterildiğine göre, aşağıdakile...
+  Dosya: soru_16_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x689
+  Metin: 16. a ve b pozitif tam sayılarının en büyük ortak böleni d olmak üzere, I. sayısı, sayısını böler. I...
 --------------------------------------------------
 Soru 17:
-  Dosya: soru_17_sayfa_4_sol.png
-  Sayfa: 4 (sol)
-  Boyut: 596x471
-  Metin: 17. { } { } A a, b, e B a, b, c, d = = olduğuna göre, (A B) K (A B) ∩ ⊆ ⊆ ∪ koşulunu sağlayan kaç ta...
+  Dosya: soru_17_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x560
+  Metin: 17. olmak üzere, fonksiyonu bire birdir. Buna göre, toplamının alabileceği en büyük değer ile en küç...
 --------------------------------------------------
 Soru 18:
-  Dosya: soru_18_sayfa_4_sol.png
-  Sayfa: 4 (sol)
-  Boyut: 596x558
-  Metin: 18. Pozitif tam sayılar kümesi üzerinde ve ⊕ ⊗ işlemleri en büyük ortak bölen ve en küçük ortak kat ...
+  Dosya: soru_18_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x644
+  Metin: 18. kümesi üzerinde tanımlı bir işlemi- nin tablosu aşağıda verilmiştir. 1 2 3 4 5 1 5 1 3 2 4 2 3 2...
 --------------------------------------------------
 Soru 19:
-  Dosya: soru_19_sayfa_4_sag.png
-  Sayfa: 4 (sag)
-  Boyut: 596x455
-  Metin: 19. Üç basamaklı ABC ve iki basamaklı AB sayılarının toplamı 392’dir. Buna göre, A B C + + toplamı k...
+  Dosya: soru_19_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x459
+  Metin: 19. x ve y iki basamaklı doğal sayılar olmak üzere, eşitliğini sağlayan kaç tane  x  sayısı vardır? ...
 --------------------------------------------------
 Soru 20:
-  Dosya: soru_20_sayfa_4_sag.png
-  Sayfa: 4 (sag)
-  Boyut: 596x566
-  Metin: 20. İki basamaklı bir AB sayısı asal olduğunda BA sayısı da asalsa AB’ye simetrik asal denir. Bir AB...
+  Dosya: soru_20_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x650
+  Metin: 20. p bir asal sayı olmak üzere, sayısı asal oluyorsa veya sayısı iki asal sayının çarpımı biçiminde...
 --------------------------------------------------
 Soru 21:
-  Dosya: soru_21_sayfa_5_sol.png
-  Sayfa: 5 (sol)
-  Boyut: 596x647
-  Metin: 21. Bir manav, limonları, her birinde 12 limon bulunan filelerle almış ve üçer üçer satmıştır. Manav...
+  Dosya: soru_21_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x577
+  Metin: 21. I. II. III. fonksiyonlarından hangileri, her a ve b gerçel sayısı için eşitliğini sağlar? A) B) ...
 --------------------------------------------------
 Soru 22:
-  Dosya: soru_22_sayfa_5_sol.png
-  Sayfa: 5 (sol)
-  Boyut: 596x638
-  Metin: 22. Bir otomobil lastiği satıcısı, lastiklerde % 25 mevsim sonu indirimi uyguladığında bir günde sat...
+  Dosya: soru_22_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x636
+  Metin: 22. Ahmet’in maaşına Deniz’in maaşının yarısı kadar zam yapılırsa ikisinin maaşları toplamı, Ahmet’i...
 --------------------------------------------------
 Soru 23:
-  Dosya: soru_23_sayfa_5_sag.png
-  Sayfa: 5 (sag)
-  Boyut: 596x661
-  Metin: 23. Bir çiftçi 5, 9, 12, 15, 23 ve 45 litrelik altı bidonun beş tanesini ayçiçeği yağı ve zeytinyağı...
+  Dosya: soru_23_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x538
+  Metin: 23. Bir şirketin 2009, 2010 ve 2011 yıllarında elde ettiği kârların ortalaması 4 milyon TL’dir. Bu ş...
 --------------------------------------------------
 Soru 24:
-  Dosya: soru_24_sayfa_5_sag.png
-  Sayfa: 5 (sag)
-  Boyut: 596x837
-  Metin: 24. Bir güreş müsabakasına katılan dört sporcunun ağır- lıkları bir hafta aralıkla ölçülmüştür. Spor...
+  Dosya: soru_24_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x922
+  Metin: 24. Bir laboratuvarda, erkek ve dişi kobay fareler üzerinde yapılan bir ilaç deneyi ile ilgili aşağı...
 --------------------------------------------------
 Soru 25:
-  Dosya: soru_25_sayfa_6_sol.png
-  Sayfa: 6 (sol)
-  Boyut: 596x757
-  Metin: 25. Bir sokakta, yolun üst tarafındaki evler ardışık tek sa- yılarla, alt tarafındakiler ise ardışık...
+  Dosya: soru_25_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x583
+  Metin: 25. Bir sınıftaki öğrencilere kırtasiye malzemesi dağıtılmak isteniyor. Bu sınıftaki 36 öğrencinin h...
 --------------------------------------------------
 Soru 26:
-  Dosya: soru_26_sayfa_6_sol.png
-  Sayfa: 6 (sol)
-  Boyut: 596x755
-  Metin: 26. Aşağıda beş lambadan oluşan bir reklam panosu gösterilmiştir. Panodaki lambalar A lambasından ba...
+  Dosya: soru_26_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x715
+  Metin: 26. Eski bir uygarlığa ait takvimde, 1 ayda 36 gün 1 yılda 10 ay bulunmaktadır. Bu uygarlıkta, gün-a...
 --------------------------------------------------
 Soru 27:
-  Dosya: soru_27_sayfa_6_sag.png
-  Sayfa: 6 (sag)
-  Boyut: 596x820
-  Metin: 27. Bir mağaza sahibi, tüm ürünlerde etiket fiyatı üzerin- den % 20 indirim yapıyor. Aynı üründen 5’...
+  Dosya: soru_27_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x1099
+  Metin: 27. Bir öğretmen; Ali, Banu, Can ve Doğa isimli dört öğrencisiyle birlikte sınıfta şöyle bir etkinli...
 --------------------------------------------------
 Soru 28:
-  Dosya: soru_28_sayfa_6_sag.png
-  Sayfa: 6 (sag)
-  Boyut: 596x775
-  Metin: 28. Tecrübeli bir aşçı bir pastanın kıvamında olabilmesi için un ve şekerin aşağıdaki doğrusal grafi...
+  Dosya: soru_28_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x481
+  Metin: 28. 5 farklı bilyenin tamamı, yaşları farklı 3 kardeş arasında paylaştırılacaktır. Bu kardeşlerden e...
 --------------------------------------------------
 Soru 29:
-  Dosya: soru_29_sayfa_7_sol.png
-  Sayfa: 7 (sol)
-  Boyut: 596x758
-  Metin: 29. Yukarıdaki şekilde, tamamı eş kare motiflerle işlen- miş bir masa örtüsünün masadan sarkan parça...
+  Dosya: soru_29_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x614
+  Metin: 29. Bir torbada 1’den 10’a kadar numaralandırılmış 10 top bulunmaktadır. Bu torbadan rastgele çekile...
 --------------------------------------------------
 Soru 30:
-  Dosya: soru_30_sayfa_7_sol.png
-  Sayfa: 7 (sol)
-  Boyut: 596x713
-  Metin: 30. Bir çiftçinin bahçesindeki meyve ağaçlarının dağılımı aşağıdaki dairesel grafikte gösterilmiştir...
+  Dosya: soru_30_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x1107
+  Metin: 30. Aşağıda, yeterince uzun beş çubuktan oluşan bir abaküs verilmiştir. Abaküste; sırasıyla I. çubuğ...
 --------------------------------------------------
 Soru 31:
-  Dosya: soru_31_sayfa_7_sag.png
-  Sayfa: 7 (sag)
-  Boyut: 596x524
-  Metin: 31. Bir malın miktarlara bağlı olarak değişen birim satış fiyatı yukarıdaki doğrusal grafikte göster...
+  Dosya: soru_31_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x932
+  Metin: 31. Aşağıda, bir ikizkenar dik üçgenden ve bu üçgenin hipotenüsünü çap kabul eden yarım çemberden ol...
 --------------------------------------------------
 Soru 32:
-  Dosya: soru_32_sayfa_7_sag.png
-  Sayfa: 7 (sag)
-  Boyut: 596x612
-  Metin: 32. Bir torbada 2 kırmızı, 2 beyaz ve 1 sarı bilye vardır. Torbadan rastgele 4 bilye alındığında tor...
+  Dosya: soru_32_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x783
+  Metin: 32. Aşağıdaki grafikte, beş kişinin boyları ile ilgili bazı bilgiler verilmiştir. Bu kişilerle ilgil...
 --------------------------------------------------
 Soru 33:
-  Dosya: soru_33_sayfa_8_sol.png
-  Sayfa: 8 (sol)
-  Boyut: 596x542
-  Metin: 33. ABC bir üçgen m(ABC) 50 m(CAB) 100 ° = ° = ] ] Yukarıdaki verilere göre, a b b c c a 2 − + − + −...
+  Dosya: soru_33_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x503
+  Metin: 33. ABCD bir yamuk açıortay Yukarıdaki verilere göre,  x  kaç derecedir? A) B) C) D) E) 105 110 115 ...
 --------------------------------------------------
 Soru 34:
-  Dosya: soru_34_sayfa_8_sol.png
-  Sayfa: 8 (sol)
-  Boyut: 596x514
-  Metin: 34. ABCD bir dikdörtgen AD 1 cm AE EB 2 cm FE x = = = = Yukarıdaki verilere göre,  x  kaç cm’dir? A)...
+  Dosya: soru_34_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x794
+  Metin: 34. ABCD dikdörtgeni biçimindeki bir kâğıdın DC kenarı üzerinde bir E noktası ve AB kenarı üzerinde ...
 --------------------------------------------------
 Soru 35:
-  Dosya: soru_35_sayfa_8_sag.png
-  Sayfa: 8 (sag)
-  Boyut: 596x542
-  Metin: 35. ABCD bir paralel- kenar AECD bir yamuk BE 3 cm DC 4 cm = = Şekildeki ABCD paralelkenarının alanı...
+  Dosya: soru_35_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x817
+  Metin: 35. Bir kenar uzunluğu a birim olan bir kare, yedisi eş toplam sekiz kareye ayrılıyor ve elde edilen...
 --------------------------------------------------
 Soru 36:
-  Dosya: soru_36_sayfa_8_sag.png
-  Sayfa: 8 (sag)
-  Boyut: 596x597
-  Metin: 36. ABCD bir dikdörtgen p CE , A merkezli çember yayı DA 4 cm AC 8 cm = = Yukarıdaki verilere göre, ...
+  Dosya: soru_36_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x911
+  Metin: 36. O merkezli çembere, dışındaki bir P noktasından teğet çizme yöntemi aşağıda verilmiştir.  OP do...
 --------------------------------------------------
 Soru 37:
-  Dosya: soru_37_sayfa_9_sol.png
-  Sayfa: 9 (sol)
-  Boyut: 596x545
-  Metin: 37. O noktası çemberin merkezi AT, çembere T nok- tasında teğet AT 3 cm m(OAT) 45 = ° = ] Yukarıdaki...
+  Dosya: soru_37_sayfa_11_sag.png
+  Sayfa: 11 (sag)
+  Boyut: 596x707
+  Metin: 37. Yükseklikleri eşit, taban yarıçapları sırasıyla 2 metre ve 3 metre olan dik dairesel silindir bi...
 --------------------------------------------------
 Soru 38:
-  Dosya: soru_38_sayfa_9_sol.png
-  Sayfa: 9 (sol)
-  Boyut: 596x526
-  Metin: 38. Yukarıda bir küpün açınımı verilmiştir. Küpün üst yüzeyinde siyah kare bulunduğunda alt yüzeyind...
+  Dosya: soru_38_sayfa_11_sag.png
+  Sayfa: 11 (sag)
+  Boyut: 596x447
+  Metin: 38. Yukarıdaki verilere göre,  x  kaç cm’dir? A) B) C) E) D) 6 7 7 Diğer sayfaya geçiniz.
 --------------------------------------------------
 Soru 39:
-  Dosya: soru_39_sayfa_9_sag.png
-  Sayfa: 9 (sag)
-  Boyut: 596x515
-  Metin: 39. Dik koordinat düzleminde, y 2x 1 0 + −= doğrusu- na ( ) A 1, 0  noktasından çizilen dikme, Y eks...
+  Dosya: soru_39_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x508
+  Metin: 39. OABC bir paralelkenar Yukarıdaki verilere göre, OABC paralelkenarının köşegen uzunlukları toplam...
 --------------------------------------------------
 Soru 40:
-  Dosya: soru_40_sayfa_9_sag.png
-  Sayfa: 9 (sag)
-  Boyut: 596x631
-  Metin: 40. Köşeleri ( ) ( ) ( ) A 3, 1 , B 5, 3 , C 2, 5  ve ( ) D a, b  kö- şegenleri [ ] [ ] AC ve BD  ol...
+  Dosya: soru_40_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x545
+  Metin: 40. Şekildeki dik koordinat düzleminde verilen d ve e doğru- ları birbirine diktir. Buna göre, d doğ...
 --------------------------------------------------
