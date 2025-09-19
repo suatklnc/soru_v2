@@ -613,8 +613,20 @@ class QuestionExtractor:
 
 # Kullanım örneği
 def main():
-    # Bölünmüş PDF dosyası
-    pdf_path = "sorular.pdf"
+    # Dizindeki PDF dosyasını otomatik bul
+    import glob
+    pdf_files = glob.glob("*.pdf")
+    
+    # processed_sorular.pdf'yi hariç tut
+    pdf_files = [f for f in pdf_files if f != "processed_sorular.pdf"]
+    
+    if not pdf_files:
+        print("Dizinde PDF dosyası bulunamadı!")
+        return None, None
+    
+    # İlk PDF dosyasını kullan
+    pdf_path = pdf_files[0]
+    print(f"PDF dosyası bulundu: {pdf_path}")
     
     # Question extractor oluştur
     extractor = QuestionExtractor(pdf_path)

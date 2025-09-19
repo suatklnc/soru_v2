@@ -3,240 +3,240 @@
 Soru 1:
   Dosya: soru_1_sayfa_1_sol.png
   Sayfa: 1 (sol)
-  Boyut: 596x504
-  Metin: 1. olduğuna göre,  m  kaçtır? A) B) C) D) E) 3 4 5 6 7
+  Boyut: 596x411
+  Metin: 1. işleminin sonucu kaçtır? A) B) C) D) E) 5 6 7 8 9 ÖSY
 --------------------------------------------------
 Soru 2:
   Dosya: soru_2_sayfa_1_sol.png
   Sayfa: 1 (sol)
   Boyut: 596x441
-  Metin: 2. işleminin sonucu kaçtır? A) B) C) 0,06 0,08 0,1 E) D) 0,12 0,14 27
+  Metin: 2. işleminin sonucu kaçtır? A) B) C) D) E) 20 24 25 27 30 23
 --------------------------------------------------
 Soru 3:
   Dosya: soru_3_sayfa_1_sag.png
   Sayfa: 1 (sag)
-  Boyut: 596x487
-  Metin: 3. olduğuna göre,  a  kaçtır? A) B) C) E) D)
+  Boyut: 596x423
+  Metin: 3. işleminin sonucu kaçtır? A) B) C) D) E)
 --------------------------------------------------
 Soru 4:
   Dosya: soru_4_sayfa_1_sag.png
   Sayfa: 1 (sag)
-  Boyut: 596x503
-  Metin: 4. Solda verilen çıkarma işlemine göre, sağdaki çıkarma işleminin sonucu kaçtır? A) B) C) D) E) 44 3...
+  Boyut: 596x281
+  Metin: 4. Bir sayının ’ü 5 sayısına eşittir. Buna göre, bu sayının 6 katı kaçtır? A) B) C) D) E) 30 40 45 5...
 --------------------------------------------------
 Soru 5:
   Dosya: soru_5_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x503
-  Metin: 5. a ve b birer gerçel sayı olmak üzere, olduğuna göre, toplamı kaçtır? A) B) C) D) E) 6 5 4 3 2
+  Boyut: 596x411
+  Metin: 5. n bir tam sayı olmak üzere, ifadesi bir asal sayıya eşittir. Buna göre, n’nin alabileceği değerle...
 --------------------------------------------------
 Soru 6:
   Dosya: soru_6_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x477
-  Metin: 6. x ve y gerçel sayıları için olduğuna göre, in y türünden eşiti aşağıdaki- lerden hangisidir? A) B...
+  Boyut: 596x433
+  Metin: 6. olduğuna göre, kaçtır? A) B) C) D) E) 6 8 9 12 16
 --------------------------------------------------
 Soru 7:
-  Dosya: soru_7_sayfa_2_sag.png
-  Sayfa: 2 (sag)
-  Boyut: 596x509
-  Metin: 7. x, y ve z gerçel sayıları için olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur? A) B) C)...
+  Dosya: soru_7_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x506
+  Metin: 7. Dört basamaklı ABAB doğal sayısı, rakamları toplamının 404 katına eşittir. Buna göre, çarpımı kaç...
 --------------------------------------------------
 Soru 8:
   Dosya: soru_8_sayfa_2_sag.png
   Sayfa: 2 (sag)
-  Boyut: 596x448
-  Metin: 8. olduğuna göre, ifadesinin değeri kaçtır? A) B) C) D) E) 0 1 2 8 Diğer sayfaya geçiniz.
+  Boyut: 596x462
+  Metin: 8. n, 2’den büyük bir tam sayı olmak üzere; A(n), n sayısının asal bölenlerinin çarpımı biçiminde ta...
 --------------------------------------------------
 Soru 9:
-  Dosya: soru_9_sayfa_3_sol.png
-  Sayfa: 3 (sol)
-  Boyut: 596x481
-  Metin: 9. olduğuna göre,  n  kaçtır? A) B) C) D) E) 9 10 12 13 15
+  Dosya: soru_9_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x494
+  Metin: 9. a ve b gerçel sayıları için olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur? A) B) C) D)...
 --------------------------------------------------
 Soru 10:
   Dosya: soru_10_sayfa_3_sol.png
   Sayfa: 3 (sol)
-  Boyut: 596x449
-  Metin: 10. x ve y gerçel sayıları için olduğuna göre, toplamı kaçtır? A) B) C) D) E) 5 6 7 8 9 29
+  Boyut: 596x393
+  Metin: 10. çarpımının 5 ile bölümünden kalan kaçtır? A) B) C) D) E) 0 1 2 3 4 ÖSY
 --------------------------------------------------
 Soru 11:
-  Dosya: soru_11_sayfa_3_sag.png
-  Sayfa: 3 (sag)
-  Boyut: 596x481
-  Metin: 11. x, y ve z tam sayıları için olduğuna göre, toplamının alabileceği değerlerden 100’e en yakın ola...
+  Dosya: soru_11_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x441
+  Metin: 11. olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur? A) B) C) D) E) 25
 --------------------------------------------------
 Soru 12:
   Dosya: soru_12_sayfa_3_sag.png
   Sayfa: 3 (sag)
-  Boyut: 596x483
-  Metin: 12. olduğuna göre, A’yı tam bölen asal sayıların toplamı kaçtır? A) B) C) D) E) 16 18 20 22 24 9 Diğ...
+  Boyut: 596x479
+  Metin: 12. x ve y gerçel sayıları için SYM olduğuna göre, toplamı kaçtır? A) B) C) D) E) 12 10 8 6 4
 --------------------------------------------------
 Soru 13:
-  Dosya: soru_13_sayfa_4_sol.png
-  Sayfa: 4 (sol)
-  Boyut: 596x526
-  Metin: 13. Bir A kümesi ile ilgili aşağıdakiler bilinmektedir.  6 ardışık tek doğal sayıdan oluşmaktadır. ...
+  Dosya: soru_13_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x471
+  Metin: 13. a ve b tam sayıları için olduğuna göre, çarpımı kaçtır? A) B) C) D) E) 1 2 3 4 6 5 Diğer sayfaya...
 --------------------------------------------------
 Soru 14:
   Dosya: soru_14_sayfa_4_sol.png
   Sayfa: 4 (sol)
-  Boyut: 596x475
-  Metin: 14. p: q: r: önermeleri veriliyor. Buna göre, aşağıdaki bileşik önermelerden hangisi doğrudur? A) B)...
+  Boyut: 596x472
+  Metin: 14. Pozitif gerçel sayılar kümesi üzerinde tanımlı f ve g fonksiyonları için olduğuna göre, değeri k...
 --------------------------------------------------
 Soru 15:
-  Dosya: soru_15_sayfa_4_sag.png
-  Sayfa: 4 (sag)
-  Boyut: 596x459
-  Metin: 15. Birbirinden farklı a, 2, b, 9 ve 6 pozitif tam sayıları küçükten büyüğe doğru sıralandığında ort...
+  Dosya: soru_15_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x597
+  Metin: 15. Doğal sayılar kümesi üzerinde tanımlı bir  f  fonksiyonu her n için biçiminde tanımlanıyor. Örne...
 --------------------------------------------------
 Soru 16:
   Dosya: soru_16_sayfa_4_sag.png
   Sayfa: 4 (sag)
-  Boyut: 596x689
-  Metin: 16. a ve b pozitif tam sayılarının en büyük ortak böleni d olmak üzere, I. sayısı, sayısını böler. I...
+  Boyut: 596x845
+  Metin: 16. Aşağıda, köşe noktaları A A A A ve A olan 1, 2, 3, 4 5 düzgün beşgen gösterilmiştir. SYM Bu beşg...
 --------------------------------------------------
 Soru 17:
   Dosya: soru_17_sayfa_5_sol.png
   Sayfa: 5 (sol)
-  Boyut: 596x560
-  Metin: 17. olmak üzere, fonksiyonu bire birdir. Buna göre, toplamının alabileceği en büyük değer ile en küç...
+  Boyut: 596x737
+  Metin: 17. önermeleri veriliyor. Buna göre, x ve y gerçel sayıları için I. II. III. ÖSY önermelerinden hang...
 --------------------------------------------------
 Soru 18:
   Dosya: soru_18_sayfa_5_sol.png
   Sayfa: 5 (sol)
-  Boyut: 596x644
-  Metin: 18. kümesi üzerinde tanımlı bir işlemi- nin tablosu aşağıda verilmiştir. 1 2 3 4 5 1 5 1 3 2 4 2 3 2...
+  Boyut: 596x510
+  Metin: 18. olmak üzere,                    kümesinin eleman sayısı 1 olacak biçimde kaç farklı X alt kümesi...
 --------------------------------------------------
 Soru 19:
   Dosya: soru_19_sayfa_5_sag.png
   Sayfa: 5 (sag)
-  Boyut: 596x459
-  Metin: 19. x ve y iki basamaklı doğal sayılar olmak üzere, eşitliğini sağlayan kaç tane  x  sayısı vardır? ...
+  Boyut: 596x1005
+  Metin: 19. Ali; sıfırdan farklı, birbirine eşit olan x ve y gerçel sayıları için            eşitliğiyle baş...
 --------------------------------------------------
 Soru 20:
-  Dosya: soru_20_sayfa_5_sag.png
-  Sayfa: 5 (sag)
-  Boyut: 596x650
-  Metin: 20. p bir asal sayı olmak üzere, sayısı asal oluyorsa veya sayısı iki asal sayının çarpımı biçiminde...
+  Dosya: soru_20_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x433
+  Metin: 20. Rakamları sıfırdan farklı üç basamaklı bir doğal sayı her bir basamağındaki rakama kalansız bölü...
 --------------------------------------------------
 Soru 21:
   Dosya: soru_21_sayfa_6_sol.png
   Sayfa: 6 (sol)
-  Boyut: 596x577
-  Metin: 21. I. II. III. fonksiyonlarından hangileri, her a ve b gerçel sayısı için eşitliğini sağlar? A) B) ...
+  Boyut: 596x581
+  Metin: 21. Bir sınıftaki öğrencilerin % 80’i gitar çalabilmektedir. Sınıftaki öğrencilerin % 80’i erkek old...
 --------------------------------------------------
 Soru 22:
-  Dosya: soru_22_sayfa_6_sol.png
-  Sayfa: 6 (sol)
-  Boyut: 596x636
-  Metin: 22. Ahmet’in maaşına Deniz’in maaşının yarısı kadar zam yapılırsa ikisinin maaşları toplamı, Ahmet’i...
+  Dosya: soru_22_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x535
+  Metin: 22. 1’den 8’e kadar numaralanmış 8 adet top iki kutuya her kutuda dört top bulunacak biçimde aşağıda...
 --------------------------------------------------
 Soru 23:
   Dosya: soru_23_sayfa_6_sag.png
   Sayfa: 6 (sag)
-  Boyut: 596x538
-  Metin: 23. Bir şirketin 2009, 2010 ve 2011 yıllarında elde ettiği kârların ortalaması 4 milyon TL’dir. Bu ş...
+  Boyut: 596x862
+  Metin: 23. Dolu depoyla yola çıkan bir araç, deposundaki benzinin üçte ikisini harcadığında bir akaryakıt i...
 --------------------------------------------------
 Soru 24:
-  Dosya: soru_24_sayfa_6_sag.png
-  Sayfa: 6 (sag)
-  Boyut: 596x922
-  Metin: 24. Bir laboratuvarda, erkek ve dişi kobay fareler üzerinde yapılan bir ilaç deneyi ile ilgili aşağı...
+  Dosya: soru_24_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x845
+  Metin: 24. Bir yarışmada üç kişiden oluşan bir jüri, yarışmacılara evet ya da hayır oyu vermektedir. 20 kiş...
 --------------------------------------------------
 Soru 25:
-  Dosya: soru_25_sayfa_7_sol.png
-  Sayfa: 7 (sol)
-  Boyut: 596x583
-  Metin: 25. Bir sınıftaki öğrencilere kırtasiye malzemesi dağıtılmak isteniyor. Bu sınıftaki 36 öğrencinin h...
+  Dosya: soru_25_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x999
+  Metin: 25. A, B, C ve D bilyelerinden üçünün ağırlığı aynıdır. Bir eşit kollu terazinin  sol kefesine A ve...
 --------------------------------------------------
 Soru 26:
-  Dosya: soru_26_sayfa_7_sol.png
-  Sayfa: 7 (sol)
-  Boyut: 596x715
-  Metin: 26. Eski bir uygarlığa ait takvimde, 1 ayda 36 gün 1 yılda 10 ay bulunmaktadır. Bu uygarlıkta, gün-a...
+  Dosya: soru_26_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x580
+  Metin: 26. Bir uçakta seyahat eden yolcular, ikram edilen çay ve kahveden en fazla birini almıştır. Bu yolc...
 --------------------------------------------------
 Soru 27:
-  Dosya: soru_27_sayfa_7_sag.png
-  Sayfa: 7 (sag)
-  Boyut: 596x1099
-  Metin: 27. Bir öğretmen; Ali, Banu, Can ve Doğa isimli dört öğrencisiyle birlikte sınıfta şöyle bir etkinli...
+  Dosya: soru_27_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x908
+  Metin: 27. Bir yumurta üretim çiftliğinde, Ayhan ve Burcu yumurtaları kolilere dizme ve bu kolileri paketle...
 --------------------------------------------------
 Soru 28:
-  Dosya: soru_28_sayfa_8_sol.png
-  Sayfa: 8 (sol)
-  Boyut: 596x481
-  Metin: 28. 5 farklı bilyenin tamamı, yaşları farklı 3 kardeş arasında paylaştırılacaktır. Bu kardeşlerden e...
+  Dosya: soru_28_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x943
+  Metin: 28. Alper çalıştığı iş yerinde sabah 08.00’de yapılacak bir toplantıya katılacaktır. Toplantı vaktin...
 --------------------------------------------------
 Soru 29:
-  Dosya: soru_29_sayfa_8_sol.png
-  Sayfa: 8 (sol)
-  Boyut: 596x614
-  Metin: 29. Bir torbada 1’den 10’a kadar numaralandırılmış 10 top bulunmaktadır. Bu torbadan rastgele çekile...
+  Dosya: soru_29_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x1083
+  Metin: 29. Aşağıda, merkezleri aynı olan ve üzerlerinde eşit aralıklarla semboller konumlandırılmış küçük v...
 --------------------------------------------------
 Soru 30:
-  Dosya: soru_30_sayfa_8_sag.png
-  Sayfa: 8 (sag)
-  Boyut: 596x1107
-  Metin: 30. Aşağıda, yeterince uzun beş çubuktan oluşan bir abaküs verilmiştir. Abaküste; sırasıyla I. çubuğ...
+  Dosya: soru_30_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x929
+  Metin: 30. Bir çiftçi, bahçesinden topladığı incir, üzüm ve kayısı meyvelerini kurumaya bırakmıştır. Aşağıd...
 --------------------------------------------------
 Soru 31:
-  Dosya: soru_31_sayfa_9_sol.png
-  Sayfa: 9 (sol)
-  Boyut: 596x932
-  Metin: 31. Aşağıda, bir ikizkenar dik üçgenden ve bu üçgenin hipotenüsünü çap kabul eden yarım çemberden ol...
+  Dosya: soru_31_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x467
+  Metin: 31. Bir okulun basketbol takımında, ikisi kardeş olmak üzere, toplam 8 oyuncu bulunmaktadır. Bu oyun...
 --------------------------------------------------
 Soru 32:
-  Dosya: soru_32_sayfa_9_sag.png
-  Sayfa: 9 (sag)
-  Boyut: 596x783
-  Metin: 32. Aşağıdaki grafikte, beş kişinin boyları ile ilgili bazı bilgiler verilmiştir. Bu kişilerle ilgil...
+  Dosya: soru_32_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x661
+  Metin: 32. Deniz, bir karenin köşe noktaları olan aşağıdaki dört noktadan rastgele ikisini kırmızıya, diğer...
 --------------------------------------------------
 Soru 33:
-  Dosya: soru_33_sayfa_10_sol.png
-  Sayfa: 10 (sol)
-  Boyut: 596x503
-  Metin: 33. ABCD bir yamuk açıortay Yukarıdaki verilere göre,  x  kaç derecedir? A) B) C) D) E) 105 110 115 ...
+  Dosya: soru_33_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x518
+  Metin: 33. ABCDEF düzgün altıgen ABGH kare SYM Yukarıdaki verilere göre,  x  kaç derecedir? A) B) C) D) E) ...
 --------------------------------------------------
 Soru 34:
-  Dosya: soru_34_sayfa_10_sol.png
-  Sayfa: 10 (sol)
-  Boyut: 596x794
-  Metin: 34. ABCD dikdörtgeni biçimindeki bir kâğıdın DC kenarı üzerinde bir E noktası ve AB kenarı üzerinde ...
+  Dosya: soru_34_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x460
+  Metin: 34. ABCD bir kare Yukarıdaki verilere göre,  x  kaç cm’dir? A) B) C) D) E) 2 Diğer sayfaya geçiniz.
 --------------------------------------------------
 Soru 35:
-  Dosya: soru_35_sayfa_10_sag.png
-  Sayfa: 10 (sag)
-  Boyut: 596x817
-  Metin: 35. Bir kenar uzunluğu a birim olan bir kare, yedisi eş toplam sekiz kareye ayrılıyor ve elde edilen...
+  Dosya: soru_35_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x736
+  Metin: 35. Aşağıda O merkezli iç içe iki çember ile bu iki çembere de teğet olan M merkezli çember verilmiş...
 --------------------------------------------------
 Soru 36:
-  Dosya: soru_36_sayfa_11_sol.png
-  Sayfa: 11 (sol)
-  Boyut: 596x911
-  Metin: 36. O merkezli çembere, dışındaki bir P noktasından teğet çizme yöntemi aşağıda verilmiştir.  OP do...
+  Dosya: soru_36_sayfa_11_sag.png
+  Sayfa: 11 (sag)
+  Boyut: 596x594
+  Metin: 36. Şekilde verilen ABC ikizkenar dik üçgen biçimindeki kâğıt, AB kenarı AC kenarı üzerine gelecek b...
 --------------------------------------------------
 Soru 37:
-  Dosya: soru_37_sayfa_11_sag.png
-  Sayfa: 11 (sag)
-  Boyut: 596x707
-  Metin: 37. Yükseklikleri eşit, taban yarıçapları sırasıyla 2 metre ve 3 metre olan dik dairesel silindir bi...
+  Dosya: soru_37_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x620
+  Metin: 37. Yüksekliği 7 cm ve tamamı suyla dolu olan bir dik dairesel silindir ile aynı tabanlı ve yüksekli...
 --------------------------------------------------
 Soru 38:
-  Dosya: soru_38_sayfa_11_sag.png
-  Sayfa: 11 (sag)
-  Boyut: 596x447
-  Metin: 38. Yukarıdaki verilere göre,  x  kaç cm’dir? A) B) C) E) D) 6 7 7 Diğer sayfaya geçiniz.
+  Dosya: soru_38_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x710
+  Metin: 38. Birim küplerden oluşan ve ayrıt uzunlukları 2 birim, 3 birim ve 4 birim olan dikdörtgenler prizm...
 --------------------------------------------------
 Soru 39:
-  Dosya: soru_39_sayfa_12_sol.png
-  Sayfa: 12 (sol)
-  Boyut: 596x508
-  Metin: 39. OABC bir paralelkenar Yukarıdaki verilere göre, OABC paralelkenarının köşegen uzunlukları toplam...
+  Dosya: soru_39_sayfa_12_sag.png
+  Sayfa: 12 (sag)
+  Boyut: 596x377
+  Metin: 39. Dik koordinat düzleminde bulunan ABCD dikdörtgeninin kenarları eksenlere paraleldir. A ve C köşe...
 --------------------------------------------------
 Soru 40:
-  Dosya: soru_40_sayfa_12_sol.png
-  Sayfa: 12 (sol)
-  Boyut: 596x545
-  Metin: 40. Şekildeki dik koordinat düzleminde verilen d ve e doğru- ları birbirine diktir. Buna göre, d doğ...
+  Dosya: soru_40_sayfa_12_sag.png
+  Sayfa: 12 (sag)
+  Boyut: 596x532
+  Metin: 40. Yukarıdaki verilere göre, C noktasının koordinatları toplamı kaçtır? A) B) C) D) E) 3 4 5 6 7 TE...
 --------------------------------------------------
