@@ -27,7 +27,7 @@ Soru 4:
 Soru 5:
   Dosya: soru_5_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x523
+  Boyut: 596x553
   Metin: 5. a ve b birer gerçel sayı olmak üzere, olduğuna göre, toplamı kaçtır? A) B) C) D) E) 6 5 4 3 2
 --------------------------------------------------
 Soru 6:
@@ -39,7 +39,7 @@ Soru 6:
 Soru 7:
   Dosya: soru_7_sayfa_2_sag.png
   Sayfa: 2 (sag)
-  Boyut: 596x529
+  Boyut: 596x559
   Metin: 7. x, y ve z gerçel sayıları için olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur? A) B) C)...
 --------------------------------------------------
 Soru 8:
@@ -51,7 +51,7 @@ Soru 8:
 Soru 9:
   Dosya: soru_9_sayfa_3_sol.png
   Sayfa: 3 (sol)
-  Boyut: 596x501
+  Boyut: 596x531
   Metin: 9. olduğuna göre,  n  kaçtır? A) B) C) D) E) 9 10 12 13 15
 --------------------------------------------------
 Soru 10:
@@ -63,7 +63,7 @@ Soru 10:
 Soru 11:
   Dosya: soru_11_sayfa_3_sag.png
   Sayfa: 3 (sag)
-  Boyut: 596x501
+  Boyut: 596x531
   Metin: 11. x, y ve z tam sayıları için olduğuna göre, toplamının alabileceği değerlerden 100’e en yakın ola...
 --------------------------------------------------
 Soru 12:
@@ -75,7 +75,7 @@ Soru 12:
 Soru 13:
   Dosya: soru_13_sayfa_4_sol.png
   Sayfa: 4 (sol)
-  Boyut: 596x546
+  Boyut: 596x576
   Metin: 13. Bir A kümesi ile ilgili aşağıdakiler bilinmektedir.  6 ardışık tek doğal sayıdan oluşmaktadır. ...
 --------------------------------------------------
 Soru 14:
@@ -87,7 +87,7 @@ Soru 14:
 Soru 15:
   Dosya: soru_15_sayfa_4_sag.png
   Sayfa: 4 (sag)
-  Boyut: 596x479
+  Boyut: 596x509
   Metin: 15. Birbirinden farklı a, 2, b, 9 ve 6 pozitif tam sayıları küçükten büyüğe doğru sıralandığında ort...
 --------------------------------------------------
 Soru 16:
@@ -99,7 +99,7 @@ Soru 16:
 Soru 17:
   Dosya: soru_17_sayfa_5_sol.png
   Sayfa: 5 (sol)
-  Boyut: 596x580
+  Boyut: 596x610
   Metin: 17. olmak üzere, fonksiyonu bire birdir. Buna göre, toplamının alabileceği en büyük değer ile en küç...
 --------------------------------------------------
 Soru 18:
@@ -111,7 +111,7 @@ Soru 18:
 Soru 19:
   Dosya: soru_19_sayfa_5_sag.png
   Sayfa: 5 (sag)
-  Boyut: 596x479
+  Boyut: 596x509
   Metin: 19. x ve y iki basamaklı doğal sayılar olmak üzere, eşitliğini sağlayan kaç tane  x  sayısı vardır? ...
 --------------------------------------------------
 Soru 20:
@@ -123,7 +123,7 @@ Soru 20:
 Soru 21:
   Dosya: soru_21_sayfa_6_sol.png
   Sayfa: 6 (sol)
-  Boyut: 596x597
+  Boyut: 596x627
   Metin: 21. I. II. III. fonksiyonlarından hangileri, her a ve b gerçel sayısı için eşitliğini sağlar? A) B) ...
 --------------------------------------------------
 Soru 22:
@@ -135,19 +135,19 @@ Soru 22:
 Soru 23:
   Dosya: soru_23_sayfa_6_sag.png
   Sayfa: 6 (sag)
-  Boyut: 596x558
+  Boyut: 596x588
   Metin: 23. Bir şirketin 2009, 2010 ve 2011 yıllarında elde ettiği kârların ortalaması 4 milyon TL’dir. Bu ş...
 --------------------------------------------------
 Soru 24:
   Dosya: soru_24_sayfa_6_sag.png
   Sayfa: 6 (sag)
-  Boyut: 596x1016
+  Boyut: 596x1046
   Metin: 24. Bir laboratuvarda, erkek ve dişi kobay fareler üzerinde yapılan bir ilaç deneyi ile ilgili aşağı...
 --------------------------------------------------
 Soru 25:
   Dosya: soru_25_sayfa_7_sol.png
   Sayfa: 7 (sol)
-  Boyut: 596x603
+  Boyut: 596x633
   Metin: 25. Bir sınıftaki öğrencilere kırtasiye malzemesi dağıtılmak isteniyor. Bu sınıftaki 36 öğrencinin h...
 --------------------------------------------------
 Soru 26:
@@ -165,7 +165,7 @@ Soru 27:
 Soru 28:
   Dosya: soru_28_sayfa_8_sol.png
   Sayfa: 8 (sol)
-  Boyut: 596x501
+  Boyut: 596x531
   Metin: 28. 5 farklı bilyenin tamamı, yaşları farklı 3 kardeş arasında paylaştırılacaktır. Bu kardeşlerden e...
 --------------------------------------------------
 Soru 29:
@@ -195,7 +195,7 @@ Soru 32:
 Soru 33:
   Dosya: soru_33_sayfa_10_sol.png
   Sayfa: 10 (sol)
-  Boyut: 596x523
+  Boyut: 596x553
   Metin: 33. ABCD bir yamuk açıortay Yukarıdaki verilere göre,  x  kaç derecedir? A) B) C) D) E) 105 110 115 ...
 --------------------------------------------------
 Soru 34:
@@ -219,7 +219,7 @@ Soru 36:
 Soru 37:
   Dosya: soru_37_sayfa_11_sag.png
   Sayfa: 11 (sag)
-  Boyut: 596x727
+  Boyut: 596x757
   Metin: 37. Yükseklikleri eşit, taban yarıçapları sırasıyla 2 metre ve 3 metre olan dik dairesel silindir bi...
 --------------------------------------------------
 Soru 38:
@@ -231,7 +231,7 @@ Soru 38:
 Soru 39:
   Dosya: soru_39_sayfa_12_sol.png
   Sayfa: 12 (sol)
-  Boyut: 596x528
+  Boyut: 596x558
   Metin: 39. OABC bir paralelkenar Yukarıdaki verilere göre, OABC paralelkenarının köşegen uzunlukları toplam...
 --------------------------------------------------
 Soru 40:

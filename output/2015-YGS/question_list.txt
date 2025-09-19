@@ -27,13 +27,13 @@ Soru 4:
 Soru 5:
   Dosya: soru_5_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x431
+  Boyut: 596x461
   Metin: 5. n bir tam sayı olmak üzere, ifadesi bir asal sayıya eşittir. Buna göre, n’nin alabileceği değerle...
 --------------------------------------------------
 Soru 6:
   Dosya: soru_6_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x453
+  Boyut: 596x483
   Metin: 6. olduğuna göre, kaçtır? A) B) C) D) E) 6 8 9 12 16
 --------------------------------------------------
 Soru 7:
@@ -45,7 +45,7 @@ Soru 7:
 Soru 8:
   Dosya: soru_8_sayfa_2_sag.png
   Sayfa: 2 (sag)
-  Boyut: 596x482
+  Boyut: 596x512
   Metin: 8. n, 2’den büyük bir tam sayı olmak üzere; A(n), n sayısının asal bölenlerinin çarpımı biçiminde ta...
 --------------------------------------------------
 Soru 9:
@@ -57,7 +57,7 @@ Soru 9:
 Soru 10:
   Dosya: soru_10_sayfa_3_sol.png
   Sayfa: 3 (sol)
-  Boyut: 596x413
+  Boyut: 596x443
   Metin: 10. çarpımının 5 ile bölümünden kalan kaçtır? A) B) C) D) E) 0 1 2 3 4 ÖSY
 --------------------------------------------------
 Soru 11:
@@ -69,7 +69,7 @@ Soru 11:
 Soru 12:
   Dosya: soru_12_sayfa_3_sag.png
   Sayfa: 3 (sag)
-  Boyut: 596x499
+  Boyut: 596x529
   Metin: 12. x ve y gerçel sayıları için SYM olduğuna göre, toplamı kaçtır? A) B) C) D) E) 12 10 8 6 4
 --------------------------------------------------
 Soru 13:
@@ -81,7 +81,7 @@ Soru 13:
 Soru 14:
   Dosya: soru_14_sayfa_4_sol.png
   Sayfa: 4 (sol)
-  Boyut: 596x492
+  Boyut: 596x522
   Metin: 14. Pozitif gerçel sayılar kümesi üzerinde tanımlı f ve g fonksiyonları için olduğuna göre, değeri k...
 --------------------------------------------------
 Soru 15:
@@ -99,7 +99,7 @@ Soru 16:
 Soru 17:
   Dosya: soru_17_sayfa_5_sol.png
   Sayfa: 5 (sol)
-  Boyut: 596x757
+  Boyut: 596x787
   Metin: 17. önermeleri veriliyor. Buna göre, x ve y gerçel sayıları için I. II. III. ÖSY önermelerinden hang...
 --------------------------------------------------
 Soru 18:
@@ -117,7 +117,7 @@ Soru 19:
 Soru 20:
   Dosya: soru_20_sayfa_6_sol.png
   Sayfa: 6 (sol)
-  Boyut: 596x453
+  Boyut: 596x483
   Metin: 20. Rakamları sıfırdan farklı üç basamaklı bir doğal sayı her bir basamağındaki rakama kalansız bölü...
 --------------------------------------------------
 Soru 21:
@@ -129,13 +129,13 @@ Soru 21:
 Soru 22:
   Dosya: soru_22_sayfa_6_sag.png
   Sayfa: 6 (sag)
-  Boyut: 596x555
+  Boyut: 596x585
   Metin: 22. 1’den 8’e kadar numaralanmış 8 adet top iki kutuya her kutuda dört top bulunacak biçimde aşağıda...
 --------------------------------------------------
 Soru 23:
   Dosya: soru_23_sayfa_6_sag.png
   Sayfa: 6 (sag)
-  Boyut: 596x1023
+  Boyut: 596x1053
   Metin: 23. Dolu depoyla yola çıkan bir araç, deposundaki benzinin üçte ikisini harcadığında bir akaryakıt i...
 --------------------------------------------------
 Soru 24:
@@ -153,13 +153,13 @@ Soru 25:
 Soru 26:
   Dosya: soru_26_sayfa_8_sol.png
   Sayfa: 8 (sol)
-  Boyut: 596x600
+  Boyut: 596x630
   Metin: 26. Bir uçakta seyahat eden yolcular, ikram edilen çay ve kahveden en fazla birini almıştır. Bu yolc...
 --------------------------------------------------
 Soru 27:
   Dosya: soru_27_sayfa_8_sol.png
   Sayfa: 8 (sol)
-  Boyut: 596x978
+  Boyut: 596x1008
   Metin: 27. Bir yumurta üretim çiftliğinde, Ayhan ve Burcu yumurtaları kolilere dizme ve bu kolileri paketle...
 --------------------------------------------------
 Soru 28:
@@ -183,7 +183,7 @@ Soru 30:
 Soru 31:
   Dosya: soru_31_sayfa_10_sol.png
   Sayfa: 10 (sol)
-  Boyut: 596x487
+  Boyut: 596x517
   Metin: 31. Bir okulun basketbol takımında, ikisi kardeş olmak üzere, toplam 8 oyuncu bulunmaktadır. Bu oyun...
 --------------------------------------------------
 Soru 32:
@@ -195,7 +195,7 @@ Soru 32:
 Soru 33:
   Dosya: soru_33_sayfa_10_sag.png
   Sayfa: 10 (sag)
-  Boyut: 596x538
+  Boyut: 596x568
   Metin: 33. ABCDEF düzgün altıgen ABGH kare SYM Yukarıdaki verilere göre,  x  kaç derecedir? A) B) C) D) E) ...
 --------------------------------------------------
 Soru 34:
@@ -219,7 +219,7 @@ Soru 36:
 Soru 37:
   Dosya: soru_37_sayfa_12_sol.png
   Sayfa: 12 (sol)
-  Boyut: 596x640
+  Boyut: 596x670
   Metin: 37. Yüksekliği 7 cm ve tamamı suyla dolu olan bir dik dairesel silindir ile aynı tabanlı ve yüksekli...
 --------------------------------------------------
 Soru 38:
@@ -231,7 +231,7 @@ Soru 38:
 Soru 39:
   Dosya: soru_39_sayfa_12_sag.png
   Sayfa: 12 (sag)
-  Boyut: 596x397
+  Boyut: 596x427
   Metin: 39. Dik koordinat düzleminde bulunan ABCD dikdörtgeninin kenarları eksenlere paraleldir. A ve C köşe...
 --------------------------------------------------
 Soru 40:

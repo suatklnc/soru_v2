@@ -9,7 +9,7 @@ Soru 1:
 Soru 2:
   Dosya: soru_2_sayfa_1_sol.png
   Sayfa: 1 (sol)
-  Boyut: 596x1030
+  Boyut: 596x1060
   Metin: 2. Fiziksel veya kimyasal değişim sonucunda maddenin çekirdek yapısı değişmez; fakat radyoaktif elem...
 --------------------------------------------------
 Soru 3:
@@ -27,13 +27,13 @@ Soru 4:
 Soru 5:
   Dosya: soru_5_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x768
+  Boyut: 596x798
   Metin: 5. Yerküre; şekilde gösterildiği gibi yaklaşık olarak özkütlesi sabit, R yarıçaplı ve O merkezli bir...
 --------------------------------------------------
 Soru 6:
   Dosya: soru_6_sayfa_2_sol.png
   Sayfa: 2 (sol)
-  Boyut: 596x810
+  Boyut: 596x840
   Metin: 6. Bir yayın ucuna farklı ağırlıklardaki cisimler asılarak yaydaki uzama miktarları aşağıdaki tabloy...
 --------------------------------------------------
 Soru 7:
@@ -45,42 +45,42 @@ Soru 7:
 Soru 8:
   Dosya: soru_8_sayfa_3_sol.png
   Sayfa: 3 (sol)
-  Boyut: 596x493
+  Boyut: 596x523
   Metin: 8. Kahve yaparken cezvedeki kahvenin ve kahveyi karıştırmak için kullanılan metal kaşığın ısınmasına...
 --------------------------------------------------
 Soru 9:
   Dosya: soru_9_sayfa_3_sol.png
   Sayfa: 3 (sol)
-  Boyut: 596x1085
+  Boyut: 596x1115
   Metin: 9. Tamamen yalıtılmış bir ortamda yalnızca iki tane katı cisim bulunmaktadır. Kütleleri, ilk sıcaklı...
 --------------------------------------------------
 Soru 10:
   Dosya: soru_10_sayfa_3_sag.png
   Sayfa: 3 (sag)
-  Boyut: 596x465
+  Boyut: 596x495
   Metin: 10. İçi dolu homojen bir metal küre, elektriksel olarak yükleniyor. Bu metal küredeki yüklerin dağıl...
 --------------------------------------------------
 Soru 11:
   Dosya: soru_11_sayfa_3_sag.png
   Sayfa: 3 (sag)
-  Boyut: 596x1113
+  Boyut: 596x1143
   Metin: 11. Bir üreteç ve K, L, M, N ampulleri kullanılarak kurulan şekildeki devrede bütün ampuller ışık ve...
 --------------------------------------------------
 Soru 12:
   Dosya: soru_12_sayfa_4_sol.png
   Sayfa: 4 (sol)
-  Boyut: 596x1577
+  Boyut: 596x1607
   Metin: 12. Özdeş çiviler, özdeş üreteçler ve özdeş toplu iğneler ile yapılan gözlemlerde elektromıknatıslık...
 --------------------------------------------------
 Soru 13:
   Dosya: soru_13_sayfa_4_sag.png
   Sayfa: 4 (sag)
-  Boyut: 596x822
+  Boyut: 596x852
   Metin: 13. Aynı maddeden yapılmış, eşit uzunlukta ve kalınlıkları farklı olan K, L, M telleri aynı kuvvetle...
 --------------------------------------------------
 Soru 14:
   Dosya: soru_14_sayfa_4_sag.png
   Sayfa: 4 (sag)
-  Boyut: 596x756
+  Boyut: 596x786
   Metin: 14. Işığı oluşturan renklerle ilgili, I. Tüm renkler birleştirildiğinde siyah renk elde edilir. II. ...
 --------------------------------------------------
