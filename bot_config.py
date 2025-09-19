@@ -7,6 +7,9 @@ BOT_CONFIG = {
     # Bot token'ınızı buraya yazın
     'BOT_TOKEN': '8412008382:AAHzHiNkgZiF4_L5_NbQ43SSczIgo5Emj6E',
     
+    # Mistral AI API Key (opsiyonel - OCR için)
+    'MISTRAL_API_KEY': None,  # Mistral AI API key'inizi buraya yazın
+    
     # Output klasörü yolu
     'OUTPUT_DIR': 'output',
     

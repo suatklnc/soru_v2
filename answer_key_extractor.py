@@ -10,6 +10,13 @@ import re
 import json
 import os
 from typing import Dict, List, Tuple, Optional
+import easyocr
+from PIL import Image
+import io
+import numpy as np
+from mistralai import Mistral
+import base64
+from bot_config import BOT_CONFIG
 
 class AnswerKeyExtractor:
     def __init__(self, pdf_path: str):
@@ -28,16 +35,24 @@ class AnswerKeyExtractor:
                 page = self.doc[page_num]
                 text = page.get_text()
                 
-                # Test başlıklarını bul
-                test_titles = self._find_test_titles(text)
+                # Eğer metin çıkarılamadıysa OCR kullan
+                if not text or len(text.strip()) < 10:
+                    print(f"  Sayfa {page_num + 1}: Metin çıkarılamadı, OCR kullanılıyor...")
+                    text = self._extract_text_with_ocr(page)
                 
-                for title in test_titles:
-                    if title not in self.answers:
-                        self.answers[title] = {}
+                if text and len(text.strip()) > 10:
+                    # Test başlıklarını bul
+                    test_titles = self._find_test_titles(text)
                     
-                    # Bu test için cevapları bul
-                    answers = self._extract_answers_for_test(text, title)
-                    self.answers[title].update(answers)
+                    for title in test_titles:
+                        if title not in self.answers:
+                            self.answers[title] = {}
+                        
+                        # Bu test için cevapları bul
+                        answers = self._extract_answers_for_test(text, title)
+                        self.answers[title].update(answers)
+                else:
+                    print(f"  Sayfa {page_num + 1}: OCR ile de metin çıkarılamadı")
             
             print(f"Toplam {len(self.answers)} test bulundu")
             for test_name, answers in self.answers.items():
@@ -79,6 +94,117 @@ class AnswerKeyExtractor:
                 return unique_titles[:3]  # En fazla 3 başlık
         
         return ['GENEL']  # Varsayılan başlık
+    
+    def _extract_text_with_ocr(self, page) -> str:
+        """OCR ile sayfadan metin çıkar - Mistral AI kullanarak"""
+        try:
+            # Önce EasyOCR dene (daha hızlı)
+            text = self._extract_with_easyocr(page)
+            if text and len(text.strip()) > 50:
+                print(f"    EasyOCR ile {len(text)} karakter çıkarıldı")
+                return text.strip()
+            
+            # EasyOCR başarısızsa Mistral AI kullan
+            print("    EasyOCR yetersiz, Mistral AI kullanılıyor...")
+            text = self._extract_with_mistral_ai(page)
+            if text:
+                print(f"    Mistral AI ile {len(text)} karakter çıkarıldı")
+                return text.strip()
+            
+            return ""
+            
+        except Exception as e:
+            print(f"    OCR hatası: {e}")
+            return ""
+    
+    def _extract_with_easyocr(self, page) -> str:
+        """EasyOCR ile metin çıkar"""
+        try:
+            # Sayfayı yüksek çözünürlükte görüntüye dönüştür
+            mat = fitz.Matrix(2.0, 2.0)  # 2x büyütme
+            pix = page.get_pixmap(matrix=mat)
+            
+            # PIL Image'a dönüştür
+            img_data = pix.tobytes("png")
+            img = Image.open(io.BytesIO(img_data))
+            
+            # PIL Image'ı NumPy array'e dönüştür
+            img_array = np.array(img)
+            
+            # EasyOCR ile metin çıkar
+            reader = easyocr.Reader(['tr', 'en'])  # Türkçe ve İngilizce
+            results = reader.readtext(img_array)
+            
+            # Sonuçları birleştir
+            text = ""
+            for (bbox, text_part, confidence) in results:
+                if confidence > 0.5:  # Güven eşiği
+                    text += text_part + " "
+            
+            return text.strip()
+            
+        except Exception as e:
+            print(f"    EasyOCR hatası: {e}")
+            return ""
+    
+    def _extract_with_mistral_ai(self, page) -> str:
+        """Mistral AI ile metin çıkar"""
+        try:
+            # Sayfayı yüksek çözünürlükte görüntüye dönüştür
+            mat = fitz.Matrix(3.0, 3.0)  # 3x büyütme (Mistral AI için daha iyi)
+            pix = page.get_pixmap(matrix=mat)
+            
+            # PIL Image'a dönüştür
+            img_data = pix.tobytes("png")
+            img = Image.open(io.BytesIO(img_data))
+            
+            # Görüntüyü base64'e dönüştür
+            img_buffer = io.BytesIO()
+            img.save(img_buffer, format='PNG')
+            img_base64 = base64.b64encode(img_buffer.getvalue()).decode()
+            
+            # Mistral AI client'ı oluştur
+            api_key = BOT_CONFIG.get('MISTRAL_API_KEY') or os.getenv('MISTRAL_API_KEY')
+            if not api_key:
+                print("    Mistral AI API key bulunamadı, sadece EasyOCR kullanılıyor")
+                return ""
+            
+            client = Mistral(api_key=api_key)
+            
+            # OCR prompt'u
+            prompt = """
+Bu görüntüdeki metni tam olarak okuyup çıkar. Bu bir cevap anahtarı PDF'i sayfası.
+Soru numaraları ve cevapları (A, B, C, D, E) formatında bulun.
+Örnek format: "1. A 2. B 3. C" şeklinde.
+Sadece metni çıkar, başka açıklama yapma.
+"""
+            
+            # Mistral AI'ye gönder
+            response = client.chat.complete(
+                model="pixtral-12b-2409",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": prompt},
+                            {
+                                "type": "image_url",
+                                "image_url": {
+                                    "url": f"data:image/png;base64,{img_base64}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                max_tokens=2000
+            )
+            
+            text = response.choices[0].message.content
+            return text.strip()
+            
+        except Exception as e:
+            print(f"    Mistral AI hatası: {e}")
+            return ""
     
     def _extract_answers_for_test(self, text: str, test_title: str) -> Dict[str, str]:
         """Belirli bir test için cevapları çıkar"""
