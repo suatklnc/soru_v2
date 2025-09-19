@@ -200,8 +200,7 @@ async def show_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await query.message.reply_text(
         answer_message,
-        parse_mode='Markdown',
-        reply_markup=create_question_keyboard()
+        parse_mode='Markdown'
     )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
