@@ -1,9 +1,11 @@
 import os
 import random
 import glob
+import json
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 import logging
+from answer_key_extractor import process_answer_key_pdfs
 
 # Logging ayarları
 logging.basicConfig(
@@ -17,7 +19,9 @@ class QuestionBot:
         self.token = token
         self.output_dir = output_dir
         self.question_files = []
+        self.answers = {}  # Cevap anahtarları
         self.load_questions()
+        self.load_answer_keys()
     
     def load_questions(self):
         """Output klasöründeki tüm soru dosyalarını yükle"""
@@ -34,6 +38,50 @@ class QuestionBot:
         except Exception as e:
             logger.error(f"Soru dosyaları yüklenirken hata: {e}")
             self.question_files = []
+    
+    def load_answer_keys(self):
+        """Cevap anahtarlarını yükle"""
+        try:
+            # Önce cevap anahtarı PDF'lerini işle
+            answer_key_files = process_answer_key_pdfs(self.output_dir)
+            
+            # JSON dosyalarını yükle
+            for test_name, json_path in answer_key_files.items():
+                if os.path.exists(json_path):
+                    with open(json_path, 'r', encoding='utf-8') as f:
+                        self.answers[test_name] = json.load(f)
+                    logger.info(f"Cevap anahtarı yüklendi: {test_name}")
+            
+            logger.info(f"Toplam {len(self.answers)} cevap anahtarı yüklendi")
+            
+        except Exception as e:
+            logger.error(f"Cevap anahtarları yüklenirken hata: {e}")
+            self.answers = {}
+    
+    def get_answer(self, question_number: int, test_name: str = None) -> str:
+        """Belirli bir soru için cevabı döndür"""
+        if not self.answers:
+            return "Bilinmiyor"
+        
+        # Test adı belirtilmişse, o testin cevap anahtarını kullan
+        if test_name and test_name in self.answers:
+            test_answers = self.answers[test_name]
+            
+            # Önce Matematik testini dene
+            math_tests = ['TEMEL MATEMATİK', 'MATEMATİK', 'MATEMAT K', 'MATEMATIK']
+            for math_test in math_tests:
+                if math_test in test_answers:
+                    answer = test_answers[math_test].get(str(question_number))
+                    if answer:
+                        return answer
+            
+            # Matematik bulunamazsa, tüm testlerde ara
+            for test, answers in test_answers.items():
+                if str(question_number) in answers:
+                    return answers[str(question_number)]
+        
+        # Test adı belirtilmemişse veya bu PDF için cevap anahtarı yoksa, cevap bulunamadı
+        return "Bilinmiyor"
     
     def get_random_question(self):
         """Rastgele bir soru dosyası seç"""
@@ -67,12 +115,16 @@ class QuestionBot:
                 page_num = parts[3]
                 side = parts[4] if len(parts) > 4 else "bilinmiyor"
                 
+                # Cevabı al
+                answer = self.get_answer(int(question_num), pdf_name)
+                
                 return {
                     'number': question_num,
                     'page': page_num,
                     'side': side,
                     'filename': filename,
-                    'pdf_name': pdf_name
+                    'pdf_name': pdf_name,
+                    'answer': answer
                 }
         except Exception as e:
             logger.error(f"Soru bilgisi çıkarılırken hata: {e}")
@@ -82,7 +134,8 @@ class QuestionBot:
             'page': '?',
             'side': '?',
             'filename': os.path.basename(file_path),
-            'pdf_name': 'Bilinmiyor'
+            'pdf_name': 'Bilinmiyor',
+            'answer': 'Bilinmiyor'
         }
 
 # Bot instance
@@ -106,14 +159,50 @@ def create_question_keyboard():
     """Soru menüsü butonlarını oluştur"""
     keyboard = [
         [
-            InlineKeyboardButton("🎲 Başka Soru", callback_data="new_question"),
-            InlineKeyboardButton("📊 İstatistik", callback_data="stats")
+            InlineKeyboardButton("🔍 Cevabı Göster", callback_data="show_answer"),
+            InlineKeyboardButton("🎲 Başka Soru", callback_data="new_question")
         ],
         [
+            InlineKeyboardButton("📊 İstatistik", callback_data="stats"),
             InlineKeyboardButton("🏠 Ana Menü", callback_data="main_menu")
         ]
     ]
     return InlineKeyboardMarkup(keyboard)
+
+async def show_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Cevabı göster"""
+    query = update.callback_query
+    await query.answer()
+    
+    global bot_instance
+    if not bot_instance:
+        await query.message.reply_text("❌ Bot henüz hazır değil.")
+        return
+    
+    # Son gönderilen soru dosyasını context'ten al
+    if 'last_question_file' not in context.user_data:
+        await query.message.reply_text("❌ Henüz soru gönderilmemiş.")
+        return
+    
+    question_file = context.user_data['last_question_file']
+    question_info = bot_instance.get_question_info(question_file)
+    
+    # Cevabı göster
+    if question_info['answer'] != 'Bilinmiyor':
+        answer_message = f"✅ **Cevap: {question_info['answer']}**\n\n"
+        answer_message += f"📚 Soru {question_info['number']}\n"
+        answer_message += f"📁 Kaynak: {question_info['pdf_name']}"
+    else:
+        answer_message = f"❓ **Cevap: Bilinmiyor**\n\n"
+        answer_message += f"📚 Soru {question_info['number']}\n"
+        answer_message += f"📁 Kaynak: {question_info['pdf_name']}\n"
+        answer_message += "\nBu PDF için cevap anahtarı bulunmuyor."
+    
+    await query.message.reply_text(
+        answer_message,
+        parse_mode='Markdown',
+        reply_markup=create_question_keyboard()
+    )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Bot başlatma komutu"""
@@ -156,12 +245,15 @@ async def send_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Soru bilgisini al
         question_info = bot_instance.get_question_info(question_file)
         
+        # Son soru dosyasını context'e kaydet
+        context.user_data['last_question_file'] = question_file
+        
         # Dosyayı gönder
         with open(question_file, 'rb') as photo:
             caption = f"📚 **Soru {question_info['number']}**\n"
             caption += f"📄 Sayfa: {question_info['page']}\n"
-            caption += f"📁 Kaynak: {question_info['pdf_name']}\n\n"
-            caption += "Başarılar! 🍀"
+            caption += f"📁 Kaynak: {question_info['pdf_name']}\n"
+            caption += "\nBaşarılar! 🍀"
             
             if update.message:
                 await update.message.reply_photo(
@@ -251,6 +343,8 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     if query.data == "new_question":
         await send_question(update, context)
+    elif query.data == "show_answer":
+        await show_answer(update, context)
     elif query.data == "stats":
         # Callback query'de stats için yeni mesaj gönder
         global bot_instance
@@ -300,20 +394,42 @@ Bot durumu: ✅ Aktif
         # Fotoğraf mesajından sonra yeni mesaj gönder
         await query.message.reply_text(help_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
     elif query.data == "info":
-        info_message = """
+        if not bot_instance:
+            await query.message.reply_text("❌ Bot henüz hazır değil.")
+            return
+        
+        # Dinamik bilgileri al
+        total_questions = len(bot_instance.question_files)
+        total_answer_keys = len(bot_instance.answers)
+        
+        # PDF klasörlerini say
+        pdf_folders = []
+        if os.path.exists(bot_instance.output_dir):
+            for item in os.listdir(bot_instance.output_dir):
+                item_path = os.path.join(bot_instance.output_dir, item)
+                if os.path.isdir(item_path) and item != "__pycache__":
+                    pdf_folders.append(item)
+        
+        pdf_count = len(pdf_folders)
+        
+        info_message = f"""
 ℹ️ **Bot Bilgisi**
 
 🤖 **Matematik Soru Botu**
-📚 **Toplam Soru:** 134 soru
-📁 **PDF Kaynakları:** 3 farklı PDF
+📚 **Toplam Soru:** {total_questions} soru
+📁 **PDF Kaynakları:** {pdf_count} farklı PDF
+🔑 **Cevap Anahtarı:** {total_answer_keys} PDF için mevcut
 🔄 **Güncelleme:** Otomatik
 ⚡ **Hız:** Anında yanıt
 
 **Özellikler:**
 ✅ Rastgele soru seçimi
 ✅ PDF kaynak bilgisi
+✅ Cevap anahtarı desteği
 ✅ Kolay navigasyon
 ✅ Hızlı erişim
+
+**PDF'ler:** {', '.join(pdf_folders[:3])}{'...' if len(pdf_folders) > 3 else ''}
 
 **Geliştirici:** @suatklnc
         """
