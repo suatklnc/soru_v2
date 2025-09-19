@@ -217,6 +217,9 @@ class QuestionExtractor:
         # Benzersiz soruları sırala ve çıkar
         sorted_questions = sorted(unique_questions.values(), key=lambda x: x['number'])
         
+        # self.questions listesini temizle
+        self.questions = []
+        
         for question in sorted_questions:
             page_num = question['page']
             page = doc_to_use.load_page(page_num)
@@ -671,7 +674,12 @@ class QuestionExtractor:
         """Soru istatistiklerini döndürür"""
         
         if not self.questions:
-            return {}
+            return {
+                'total_questions': 0,
+                'questions_by_page': {},
+                'questions_by_side': {'sol': 0, 'sag': 0},
+                'question_numbers': []
+            }
         
         stats = {
             'total_questions': len(self.questions),
