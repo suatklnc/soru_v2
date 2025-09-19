@@ -1,8 +1,8 @@
 === TOPLU PDF İŞLEME RAPORU ===
 
-Başlangıç Zamanı: 2025-09-19 23:43:46.390508
-Bitiş Zamanı: 2025-09-19 23:43:56.214615
-Toplam Süre: 9.82 saniye
+Başlangıç Zamanı: 2025-09-19 23:48:18.953695
+Bitiş Zamanı: 2025-09-19 23:48:27.586542
+Toplam Süre: 8.63 saniye
 Toplam PDF: 5
 Başarılı: 5
 Başarısız: 0

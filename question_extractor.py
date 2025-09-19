@@ -244,7 +244,12 @@ class QuestionExtractor:
                             text_blocks.append({
                                 'text': text,
                                 'bbox': span["bbox"],
-                                'y': span["bbox"][1]  # Y pozisyonu
+                                'y': span["bbox"][1],  # Y pozisyonu
+                                'span_info': {
+                                    'flags': span.get("flags", 0),
+                                    'font': span.get("font", ""),
+                                    'size': span.get("size", 0)
+                                }
                             })
         
         # Y pozisyonuna göre sırala
@@ -262,7 +267,7 @@ class QuestionExtractor:
         for i, block in enumerate(text_blocks):
             text = block['text']
             
-            # Soru numarası var mı kontrol et
+            # Soru numarası var mı kontrol et - SADECE satır başında
             question_number = None
             for pattern in question_patterns:
                 match = re.search(pattern, text)
@@ -279,8 +284,20 @@ class QuestionExtractor:
                 if self.is_instruction(text):
                     continue
                 
+                # Span bilgilerini al (font kalınlığı için)
+                span_info = block.get('span_info', {})
+                
                 # Gerçek soru başlangıcı mı kontrol et
-                if not self.is_question_start(text, question_number):
+                if not self.is_question_start(text, question_number, span_info):
+                    continue
+                
+                # Ek güvenlik kontrolü: Eğer metin çok uzunsa veya içinde soru içeriği varsa atla
+                if len(text.strip()) > 20:  # Çok uzun metinler soru içeriği içerir
+                    continue
+                
+                # İçinde soru içeriği olan kelimeler var mı kontrol et
+                content_words = ['saat', 'dakika', 'gün', 'Mart', 'matematik', 'geometri', 'öğretmen', 'ders', 'vermiştir', 'toplam']
+                if any(word in text for word in content_words):
                     continue
                 
                 question_starts.append({
@@ -322,7 +339,7 @@ class QuestionExtractor:
         
         return questions
     
-    def is_question_start(self, text, question_number):
+    def is_question_start(self, text, question_number, span_info=None):
         """Bir metnin gerçekten soru başlangıcı olup olmadığını kontrol eder"""
         
         # Soru başlangıcı karakteristikleri:
@@ -330,18 +347,39 @@ class QuestionExtractor:
         # 2. Sadece sayı ve nokta içermeli (veya "Soru" kelimesi)
         # 3. Ardından boşluk ve büyük harf gelmeli
         # 4. İçinde "saat", "dakika", "gün" gibi kelimeler olmamalı
+        # 5. Soru içeriği olmamalı (sadece numara olmalı)
+        # 6. Font kalınlığı kontrolü (eğer span_info varsa)
         
-        # Satır başında sayı kontrolü
-        if not re.match(r'^\d+\.\s*$|^Soru\s*\d+\s*$', text.strip()):
+        text = text.strip()
+        
+        # Satır başında sayı kontrolü - sadece "X." formatında olmalı
+        if not re.match(r'^\d+\.\s*$|^Soru\s*\d+\s*$', text):
             return False
         
         # İçinde soru içeriği olmamalı (sadece numara olmalı)
-        if len(text.strip()) > 10:  # Çok uzun ise soru içeriği var demektir
+        if len(text) > 15:  # Çok uzun ise soru içeriği var demektir
             return False
         
         # Soru numarası 1-50 arasında olmalı
         if not (1 <= question_number <= 50):
             return False
+        
+        # Ek kontrol: Eğer metin sadece sayı ve nokta ise, soru içeriği yok demektir
+        # Ama eğer içinde "saat", "dakika", "gün", "Mart" gibi kelimeler varsa soru içeriği var demektir
+        content_indicators = ['saat', 'dakika', 'gün', 'Mart', 'matematik', 'geometri', 'öğretmen', 'ders']
+        if any(indicator in text for indicator in content_indicators):
+            return False
+        
+        # Font kalınlığı kontrolü (eğer span_info varsa)
+        if span_info and 'flags' in span_info:
+            # Font flags kontrolü - bold olup olmadığını kontrol et
+            # PyMuPDF'de bold font genellikle flags & 2^16 (65536) ile kontrol edilir
+            is_bold = bool(span_info['flags'] & 16)  # Bold flag
+            if not is_bold:
+                # Eğer font kalın değilse, bu muhtemelen soru içeriği değil
+                # Ama sadece sayı ve nokta ise yine de kabul et
+                if not re.match(r'^\d+\.\s*$', text):
+                    return False
         
         return True
     
