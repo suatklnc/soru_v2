@@ -135,14 +135,21 @@ async def send_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global bot_instance
     
     if not bot_instance:
-        await update.message.reply_text("❌ Bot henüz hazır değil. Lütfen daha sonra tekrar deneyin.")
+        # Hem message hem de callback_query için çalışır
+        if update.message:
+            await update.message.reply_text("❌ Bot henüz hazır değil. Lütfen daha sonra tekrar deneyin.")
+        elif update.callback_query:
+            await update.callback_query.edit_message_text("❌ Bot henüz hazır değil. Lütfen daha sonra tekrar deneyin.")
         return
     
     # Rastgele soru seç
     question_file = bot_instance.get_random_question()
     
     if not question_file:
-        await update.message.reply_text("❌ Hiç soru bulunamadı. Output klasörünü kontrol edin.")
+        if update.message:
+            await update.message.reply_text("❌ Hiç soru bulunamadı. Output klasörünü kontrol edin.")
+        elif update.callback_query:
+            await update.callback_query.edit_message_text("❌ Hiç soru bulunamadı. Output klasörünü kontrol edin.")
         return
     
     try:
@@ -156,25 +163,39 @@ async def send_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
             caption += f"📁 Kaynak: {question_info['pdf_name']}\n\n"
             caption += "Başarılar! 🍀"
             
-            await update.message.reply_photo(
-                photo=photo,
-                caption=caption,
-                parse_mode='Markdown',
-                reply_markup=create_question_keyboard()
-            )
+            if update.message:
+                await update.message.reply_photo(
+                    photo=photo,
+                    caption=caption,
+                    parse_mode='Markdown',
+                    reply_markup=create_question_keyboard()
+                )
+            elif update.callback_query:
+                await update.callback_query.message.reply_photo(
+                    photo=photo,
+                    caption=caption,
+                    parse_mode='Markdown',
+                    reply_markup=create_question_keyboard()
+                )
             
         logger.info(f"Soru gönderildi: {question_info['filename']}")
         
     except Exception as e:
         logger.error(f"Soru gönderilirken hata: {e}")
-        await update.message.reply_text("❌ Soru gönderilirken bir hata oluştu.")
+        if update.message:
+            await update.message.reply_text("❌ Soru gönderilirken bir hata oluştu.")
+        elif update.callback_query:
+            await update.callback_query.edit_message_text("❌ Soru gönderilirken bir hata oluştu.")
 
 async def show_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Bot istatistiklerini göster"""
     global bot_instance
     
     if not bot_instance:
-        await update.message.reply_text("❌ Bot henüz hazır değil.")
+        if update.message:
+            await update.message.reply_text("❌ Bot henüz hazır değil.")
+        elif update.callback_query:
+            await update.callback_query.edit_message_text("❌ Bot henüz hazır değil.")
         return
     
     total_questions = len(bot_instance.question_files)
@@ -197,7 +218,10 @@ async def show_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
 Bot durumu: ✅ Aktif
     """
     
-    await update.message.reply_text(stats_message, parse_mode='Markdown')
+    if update.message:
+        await update.message.reply_text(stats_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
+    elif update.callback_query:
+        await update.callback_query.edit_message_text(stats_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Yardım komutu"""
@@ -228,7 +252,34 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if query.data == "new_question":
         await send_question(update, context)
     elif query.data == "stats":
-        await show_stats(update, context)
+        # Callback query'de stats için yeni mesaj gönder
+        global bot_instance
+        if not bot_instance:
+            await query.message.reply_text("❌ Bot henüz hazır değil.")
+            return
+        
+        total_questions = len(bot_instance.question_files)
+        
+        # PDF klasörlerini say
+        pdf_folders = []
+        if os.path.exists(bot_instance.output_dir):
+            for item in os.listdir(bot_instance.output_dir):
+                item_path = os.path.join(bot_instance.output_dir, item)
+                if os.path.isdir(item_path) and item != "__pycache__":
+                    pdf_folders.append(item)
+        
+        stats_message = f"""
+📊 **Bot İstatistikleri**
+
+📚 Toplam Soru: {total_questions}
+📁 PDF Klasörü: {len(pdf_folders)}
+📂 Klasörler: {', '.join(pdf_folders[:5])}{'...' if len(pdf_folders) > 5 else ''}
+
+Bot durumu: ✅ Aktif
+        """
+        
+        # Fotoğraf mesajından sonra yeni mesaj gönder
+        await query.message.reply_text(stats_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
     elif query.data == "help":
         help_message = """
 🆘 **Yardım Menüsü**
@@ -246,7 +297,8 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 **Not:** Bot, output klasöründeki tüm soruları rastgele seçer.
         """
-        await query.edit_message_text(help_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
+        # Fotoğraf mesajından sonra yeni mesaj gönder
+        await query.message.reply_text(help_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
     elif query.data == "info":
         info_message = """
 ℹ️ **Bot Bilgisi**
@@ -265,7 +317,8 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 **Geliştirici:** @suatklnc
         """
-        await query.edit_message_text(info_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
+        # Fotoğraf mesajından sonra yeni mesaj gönder
+        await query.message.reply_text(info_message, parse_mode='Markdown', reply_markup=create_main_keyboard())
     elif query.data == "main_menu":
         welcome_message = """
 🎓 **Matematik Soru Botu** 🎓
@@ -274,7 +327,8 @@ Merhaba! Ben matematik soruları gönderen bir botum.
 
 Aşağıdaki butonları kullanarak kolayca navigasyon yapabilirsiniz! 🚀
         """
-        await query.edit_message_text(
+        # Fotoğraf mesajından sonra yeni mesaj gönder
+        await query.message.reply_text(
             welcome_message, 
             parse_mode='Markdown',
             reply_markup=create_main_keyboard()
