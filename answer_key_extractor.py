@@ -10,10 +10,8 @@ import re
 import json
 import os
 from typing import Dict, List, Tuple, Optional
-import easyocr
 from PIL import Image
 import io
-import numpy as np
 from mistralai import Mistral
 import base64
 from bot_config import BOT_CONFIG
@@ -96,16 +94,9 @@ class AnswerKeyExtractor:
         return ['GENEL']  # Varsayılan başlık
     
     def _extract_text_with_ocr(self, page) -> str:
-        """OCR ile sayfadan metin çıkar - Mistral AI kullanarak"""
+        """OCR ile sayfadan metin çıkar - Sadece Mistral AI kullanarak"""
         try:
-            # Önce EasyOCR dene (daha hızlı)
-            text = self._extract_with_easyocr(page)
-            if text and len(text.strip()) > 50:
-                print(f"    EasyOCR ile {len(text)} karakter çıkarıldı")
-                return text.strip()
-            
-            # EasyOCR başarısızsa Mistral AI kullan
-            print("    EasyOCR yetersiz, Mistral AI kullanılıyor...")
+            print("    Mistral AI OCR kullanılıyor...")
             text = self._extract_with_mistral_ai(page)
             if text:
                 print(f"    Mistral AI ile {len(text)} karakter çıkarıldı")
@@ -115,36 +106,6 @@ class AnswerKeyExtractor:
             
         except Exception as e:
             print(f"    OCR hatası: {e}")
-            return ""
-    
-    def _extract_with_easyocr(self, page) -> str:
-        """EasyOCR ile metin çıkar"""
-        try:
-            # Sayfayı yüksek çözünürlükte görüntüye dönüştür
-            mat = fitz.Matrix(2.0, 2.0)  # 2x büyütme
-            pix = page.get_pixmap(matrix=mat)
-            
-            # PIL Image'a dönüştür
-            img_data = pix.tobytes("png")
-            img = Image.open(io.BytesIO(img_data))
-            
-            # PIL Image'ı NumPy array'e dönüştür
-            img_array = np.array(img)
-            
-            # EasyOCR ile metin çıkar
-            reader = easyocr.Reader(['tr', 'en'])  # Türkçe ve İngilizce
-            results = reader.readtext(img_array)
-            
-            # Sonuçları birleştir
-            text = ""
-            for (bbox, text_part, confidence) in results:
-                if confidence > 0.5:  # Güven eşiği
-                    text += text_part + " "
-            
-            return text.strip()
-            
-        except Exception as e:
-            print(f"    EasyOCR hatası: {e}")
             return ""
     
     def _extract_with_mistral_ai(self, page) -> str:
@@ -166,7 +127,8 @@ class AnswerKeyExtractor:
             # Mistral AI client'ı oluştur
             api_key = BOT_CONFIG.get('MISTRAL_API_KEY') or os.getenv('MISTRAL_API_KEY')
             if not api_key:
-                print("    Mistral AI API key bulunamadı, sadece EasyOCR kullanılıyor")
+                print("    ❌ Mistral AI API key bulunamadı!")
+                print("    Lütfen bot_config.py dosyasında MISTRAL_API_KEY'i ayarlayın")
                 return ""
             
             client = Mistral(api_key=api_key)
