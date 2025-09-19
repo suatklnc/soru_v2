@@ -1,0 +1,242 @@
+=== ÇIKARILAN SORULAR ===
+
+Soru 1:
+  Dosya: soru_1_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x455
+  Metin: 1. işleminin sonucu kaçtır? A) B) C) 1 2 D) E)
+--------------------------------------------------
+Soru 2:
+  Dosya: soru_2_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x441
+  Metin: 2. işleminin sonucu kaçtır? A) B) C) D) E) 8 9 12 16 18 22
+--------------------------------------------------
+Soru 3:
+  Dosya: soru_3_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x489
+  Metin: 3. işleminin sonucu kaçtır? A) B) C) D) E)
+--------------------------------------------------
+Soru 4:
+  Dosya: soru_4_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x441
+  Metin: 4. işleminin sonucu kaçtır? A) B) C) D) E) 2 Diğer sayfaya geçiniz.
+--------------------------------------------------
+Soru 5:
+  Dosya: soru_5_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x406
+  Metin: 5. işlemine göre, çarpımı kaçtır? A) B) C) D) E) 12 14 15 16 21
+--------------------------------------------------
+Soru 6:
+  Dosya: soru_6_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x441
+  Metin: 6. olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur? A) B) C) D) E) 23
+--------------------------------------------------
+Soru 7:
+  Dosya: soru_7_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x451
+  Metin: 7. x ve y gerçel sayıları için olduğuna göre, y’nin alabileceği tam sayı değerlerinin toplamı kaçtır...
+--------------------------------------------------
+Soru 8:
+  Dosya: soru_8_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x466
+  Metin: 8. ifadesinin sadeleştirilmiş biçimi aşağıdakilerden hangisidir? A) B) C) D) E) 3 Diğer sayfaya geçi...
+--------------------------------------------------
+Soru 9:
+  Dosya: soru_9_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x545
+  Metin: 9. olduğuna göre, oranı kaçtır? A) B) C) D) E)
+--------------------------------------------------
+Soru 10:
+  Dosya: soru_10_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x441
+  Metin: 10. olduğuna göre,  x  kaçtır? A) B) C) D) E) 24
+--------------------------------------------------
+Soru 11:
+  Dosya: soru_11_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x472
+  Metin: 11. olduğuna göre,  x  kaçtır? A) B) C) D) E)
+--------------------------------------------------
+Soru 12:
+  Dosya: soru_12_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x527
+  Metin: 12. p bir asal sayı ve n bir doğal sayı olmak üzere, eşitliği sağlanıyor. Buna göre, toplamı kaçtır?...
+--------------------------------------------------
+Soru 13:
+  Dosya: soru_13_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x510
+  Metin: 13. Gerçel sayı ekseninde 2 noktasına olan uzaklığı, – 4 noktasına olan uzaklığının yarısından küçük...
+--------------------------------------------------
+Soru 14:
+  Dosya: soru_14_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x493
+  Metin: 14. Pozitif gerçel sayılar kümesi üzerinde    işlemi biçiminde tanımlanıyor. olduğuna göre,  x  kaçt...
+--------------------------------------------------
+Soru 15:
+  Dosya: soru_15_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x664
+  Metin: 15. Tanım kümesi tam sayılar olan f ve g fonksiyonları biçiminde tanımlanıyor. Buna göre, I. II. III...
+--------------------------------------------------
+Soru 16:
+  Dosya: soru_16_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x653
+  Metin: 16. x, y ve z birer tam sayı olmak üzere,  çarpımının çift sayı  toplamının tek sayı  toplamının ...
+--------------------------------------------------
+Soru 17:
+  Dosya: soru_17_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x549
+  Metin: 17. Bir sayının ile çarpımı iki basamaklı AB doğal sayısına, ile çarpımı ise iki basamaklı BA doğal ...
+--------------------------------------------------
+Soru 18:
+  Dosya: soru_18_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x514
+  Metin: 18. Ardışık iki ya da üç pozitif tam sayının kareleri toplamına eşit olan sayılara kardışık sayılar ...
+--------------------------------------------------
+Soru 19:
+  Dosya: soru_19_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x655
+  Metin: 19. kümesinin 2 elemanlı tüm alt kümeleri yazılıyor. Bu alt kümelerin her birinin elemanları toplamı...
+--------------------------------------------------
+Soru 20:
+  Dosya: soru_20_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x559
+  Metin: 20. Bir okul müdürü, pazartesi günü okulun bazı öğrencilerine, "Bu iletiyi alan her öğrenci ertesi g...
+--------------------------------------------------
+Soru 21:
+  Dosya: soru_21_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x812
+  Metin: 21. Bir iş yerinde bulunan renkli yazıcı saniyede 2 sayfa, siyah-beyaz yazıcı ise saniyede 3 sayfa y...
+--------------------------------------------------
+Soru 22:
+  Dosya: soru_22_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x542
+  Metin: 22. Bir balıkçı; 16 kg çinekop, 20 kg mezgit ve 50 kg istavrit yakalamıştır. Daha sonra bu balıkları...
+--------------------------------------------------
+Soru 23:
+  Dosya: soru_23_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x751
+  Metin: 23. Hızları saatte 20 km ve 24 km olan iki bisikletli dairesel bir parkur üzerinde aynı noktadan ayn...
+--------------------------------------------------
+Soru 24:
+  Dosya: soru_24_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x587
+  Metin: 24. Bir taş sanatçısı renkli taşları üst üste koyarak çiçek veya yıldız motifleri elde ediyor. Bu sa...
+--------------------------------------------------
+Soru 25:
+  Dosya: soru_25_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x874
+  Metin: 25. Bir restoranda 2 pide menüsü alana, 1 sinema bileti hediye edilmektedir. Sinema gişesinde satıla...
+--------------------------------------------------
+Soru 26:
+  Dosya: soru_26_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x491
+  Metin: 26. Bir terzi ölçüm yapmak için 40 cm ve 50 cm uzunluklarında iki cetvel kullanmaktadır. Zeynep bu t...
+--------------------------------------------------
+Soru 27:
+  Dosya: soru_27_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x1050
+  Metin: 27. Bir şirkette, incelenmek üzere 144 adet dosya tüm çalışanlar arasında eşit olarak paylaştırılmış...
+--------------------------------------------------
+Soru 28:
+  Dosya: soru_28_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x565
+  Metin: 28. Bir meyve suyu fabrikasında üretilen portakal suyu 1 litrelik cam şişelere veya 1,5 litrelik kar...
+--------------------------------------------------
+Soru 29:
+  Dosya: soru_29_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x926
+  Metin: 29. Engin, iş yerinde çalışan personel bilgilerini kaydetmek için ad, soyad ve doğum tarihi sütunlar...
+--------------------------------------------------
+Soru 30:
+  Dosya: soru_30_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x495
+  Metin: 30. Banu, üç vagonlu bir yolcu treni için bilet satışı yapmaktadır. Belirli sayıda bilet sattıktan s...
+--------------------------------------------------
+Soru 31:
+  Dosya: soru_31_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x801
+  Metin: 31. Aşağıdaki doğrusal grafik, A ve B musluklarının bir havuza akıttıkları su miktarının zamana göre...
+--------------------------------------------------
+Soru 32:
+  Dosya: soru_32_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x507
+  Metin: 32. Bir yarışmada 1080 TL’lik para ödülü ilk üç dereceyi alan yarışmacılar arasında 3:2:1 oranında p...
+--------------------------------------------------
+Soru 33:
+  Dosya: soru_33_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x548
+  Metin: 33. Bir küpün, 8 köşesinden 6’sı beyaza, diğer 2’si siyaha rastgele boyanıyor. Bu küpte, iki ucu da ...
+--------------------------------------------------
+Soru 34:
+  Dosya: soru_34_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x461
+  Metin: 34. Yukarıdaki verilere göre, x kaç derecedir? A) B) C) D) E) 11 13 15 17 19
+--------------------------------------------------
+Soru 35:
+  Dosya: soru_35_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x640
+  Metin: 35. Kenar uzunlukları 6 birim ve 10 birim olan şekildeki dikdörtgenden I ve II numaralı kareler kesi...
+--------------------------------------------------
+Soru 36:
+  Dosya: soru_36_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x569
+  Metin: 36. Bir tasarımcının birim kareler üzerine, 2 birim yarıçaplı çeyrek çemberler çizerek oluşturduğu d...
+--------------------------------------------------
+Soru 37:
+  Dosya: soru_37_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x563
+  Metin: 37. Şekilde verilen boyalı üçgenlerin alanları birbirine eşittir. Bu paralelkenarın alanı 30 birimka...
+--------------------------------------------------
+Soru 38:
+  Dosya: soru_38_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x512
+  Metin: 38. Taban ayrıtı 1 birim, yüksekliği 3 birim olan bir kare dik prizma ile bu prizmaların dört tanesi...
+--------------------------------------------------
+Soru 39:
+  Dosya: soru_39_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x795
+  Metin: 39. Yarıçapı 6 birim olan dik dairesel silindirin içine yerleştirilen 3 birim yarıçaplı küre biçimin...
+--------------------------------------------------
+Soru 40:
+  Dosya: soru_40_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x522
+  Metin: 40. Dik koordinat düzleminde doğrusu, ve doğrularını sırasıyla P ve R noktalarında kesmektedir. Buna...
+--------------------------------------------------

@@ -1,14 +1,22 @@
 === TOPLU PDF İŞLEME RAPORU ===
 
-Başlangıç Zamanı: 2025-09-19 22:28:53.561207
-Bitiş Zamanı: 2025-09-19 22:28:57.789920
-Toplam Süre: 4.23 saniye
-Toplam PDF: 2
-Başarılı: 2
+Başlangıç Zamanı: 2025-09-19 22:54:06.487065
+Bitiş Zamanı: 2025-09-19 22:54:11.936649
+Toplam Süre: 5.45 saniye
+Toplam PDF: 4
+Başarılı: 4
 Başarısız: 0
-Toplam Soru: 80
+Toplam Soru: 134
 
 === DETAYLI SONUÇLAR ===
+
+PDF: 2013-ygs.pdf
+Durum: success
+Çıktı Klasörü: output\2013-ygs
+Soru Sayısı: 40
+Sol Taraf: 22
+Sağ Taraf: 18
+--------------------------------------------------
 
 PDF: 2015-YGS.pdf
 Durum: success
@@ -18,10 +26,18 @@ Sol Taraf: 22
 Sağ Taraf: 18
 --------------------------------------------------
 
-PDF: sorular.pdf
+PDF: 2016-ygs.pdf
 Durum: success
-Çıktı Klasörü: output\sorular
+Çıktı Klasörü: output\2016-ygs
 Soru Sayısı: 40
-Sol Taraf: 22
-Sağ Taraf: 18
+Sol Taraf: 21
+Sağ Taraf: 19
+--------------------------------------------------
+
+PDF: 2016_ygs_fizik.pdf
+Durum: success
+Çıktı Klasörü: output\2016_ygs_fizik
+Soru Sayısı: 14
+Sol Taraf: 7
+Sağ Taraf: 7
 --------------------------------------------------
