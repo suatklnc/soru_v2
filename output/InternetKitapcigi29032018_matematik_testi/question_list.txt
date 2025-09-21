@@ -1,0 +1,242 @@
+=== ÇIKARILAN SORULAR ===
+
+Soru 1:
+  Dosya: soru_1_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x501
+  Metin: 1. işleminin sonucu kaçtır? A) B) C) E) D)
+--------------------------------------------------
+Soru 2:
+  Dosya: soru_2_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x550
+  Metin: 2. işleminin sonucu kaçtır? A) B) C) D) E) 0,35 0,5 0,25 0,45 0,6 24
+--------------------------------------------------
+Soru 3:
+  Dosya: soru_3_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x485
+  Metin: 3. işleminin sonucu kaçtır? A) B) C) E) D)
+--------------------------------------------------
+Soru 4:
+  Dosya: soru_4_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x578
+  Metin: 4. x bir gerçel sayı ve olduğuna göre, kaçtır? A) B) C) E) D) 4 Diğer sayfaya geçiniz.
+--------------------------------------------------
+Soru 5:
+  Dosya: soru_5_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x531
+  Metin: 5. x ve y pozitif gerçel sayıları için olduğuna göre, toplamı kaçtır? A) B) C) D) E) 15 25 10 20 30
+--------------------------------------------------
+Soru 6:
+  Dosya: soru_6_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x549
+  Metin: 6. a bir gerçel sayı ve olduğuna göre,  a  kaçtır? A) B) C) E) D) 25
+--------------------------------------------------
+Soru 7:
+  Dosya: soru_7_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x627
+  Metin: 7. Her n pozitif tam sayısı için sayısı biçiminde tanımlanıyor. Buna göre, ifadesinin değeri kaçtır?...
+--------------------------------------------------
+Soru 8:
+  Dosya: soru_8_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x625
+  Metin: 8. olduğuna göre, ifadesinin  a  türünden eşiti aşağıdakilerden hangisidir? A) B) C) E) D) 5 Diğer s...
+--------------------------------------------------
+Soru 9:
+  Dosya: soru_9_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x545
+  Metin: 9. , ve olmak üzere, olduğuna göre, toplamı kaçtır? A) B) C) D) E) 3 1
+--------------------------------------------------
+Soru 10:
+  Dosya: soru_10_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x541
+  Metin: 10. olmak üzere, olduğuna göre,  x  kaçtır? A) B) C) E) D) 26
+--------------------------------------------------
+Soru 11:
+  Dosya: soru_11_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x525
+  Metin: 11. küçükten büyüğe doğru sıralanmış ardışık üç tam sayıdır. Buna göre, toplamı kaçtır? A) B) C) D) ...
+--------------------------------------------------
+Soru 12:
+  Dosya: soru_12_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x665
+  Metin: 12. a, b, c, d birbirinden farklı gerçel sayılar ve olduğuna göre, aşağıdakilerden hangisi doğrudur?...
+--------------------------------------------------
+Soru 13:
+  Dosya: soru_13_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x502
+  Metin: 13. AB ve BA iki basamaklı doğal sayıları 17’ye bölündüğünde elde edilen kalanların toplamı 17’dir. ...
+--------------------------------------------------
+Soru 14:
+  Dosya: soru_14_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x637
+  Metin: 14. a pozitif bir tam sayı ve olduğuna göre, a’nın alabileceği değerlerin toplamı kaçtır? A) B) C) D...
+--------------------------------------------------
+Soru 15:
+  Dosya: soru_15_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x509
+  Metin: 15. n bir pozitif tam sayı olmak üzere, 33’ün n’ye bölümünden kalan 5’tir. Buna göre, n’nin alabilec...
+--------------------------------------------------
+Soru 16:
+  Dosya: soru_16_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x743
+  Metin: 16. X, Y ve Z birer küme olmak üzere, “ ’dir.” önermesi veriliyor. Aşağıdakilerden hangisi, bu önerm...
+--------------------------------------------------
+Soru 17:
+  Dosya: soru_17_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x627
+  Metin: 17. Tam sayılar kümesi üzerinde tanımlı bir  f  fonksiyonu her n tam sayısı için eşitliklerini sağlı...
+--------------------------------------------------
+Soru 18:
+  Dosya: soru_18_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x653
+  Metin: 18. ve kümeleri veriliyor. Buna göre, her için koşulunu sağlayan kaç tane fonksiyonu tanımlanabilir?...
+--------------------------------------------------
+Soru 19:
+  Dosya: soru_19_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x582
+  Metin: 19. Elemanları birer tam sayı olan dört elemanlı bir A kümesinin tüm üç elemanlı alt kümeleri yazılı...
+--------------------------------------------------
+Soru 20:
+  Dosya: soru_20_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x788
+  Metin: 20. p ve q asal sayılarının arasındaki fark 4 ise ikilisine bir “kuzen asal çifti” denir. Buna göre,...
+--------------------------------------------------
+Soru 21:
+  Dosya: soru_21_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x610
+  Metin: 21. x, y birer tam sayı ve olduğuna göre, kaç tane sıralı ikilisi için toplamı üç basamaklı bir sayı...
+--------------------------------------------------
+Soru 22:
+  Dosya: soru_22_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x840
+  Metin: 22. Bir fırında 40 simit ve 50 poğaça toplam 100 TL’ye satılmaktadır. Bir simitçi, 30 simit ve 50 po...
+--------------------------------------------------
+Soru 23:
+  Dosya: soru_23_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x541
+  Metin: 23. Su oranı ağırlıkça % 36 olan 23 kg yaş üzüm kurumaya bırakılıyor. Bir süre sonra bu üzümlerdeki ...
+--------------------------------------------------
+Soru 24:
+  Dosya: soru_24_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x1093
+  Metin: 24. Bir koşuya katılan atletlerle ilgili olarak aşağıdakiler bilinmektedir.  Erkek atletlerin forma...
+--------------------------------------------------
+Soru 25:
+  Dosya: soru_25_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x667
+  Metin: 25. Bir iş yerinde aynı gün işe başlayan Ahmet ve Beyza’nın aylık maaşlarıyla ilgili olarak aşağıdak...
+--------------------------------------------------
+Soru 26:
+  Dosya: soru_26_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x967
+  Metin: 26. İki araç aynı anda A kentinden B kentine doğru hareket ediyor. Hızlı olan araç yolu yarıladığınd...
+--------------------------------------------------
+Soru 27:
+  Dosya: soru_27_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x649
+  Metin: 27. Bir ölçme işleminde; iki ölçüm cihazından birincisi gerçek uzunluğun % 3 fazlasını, ikincisi ise...
+--------------------------------------------------
+Soru 28:
+  Dosya: soru_28_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x985
+  Metin: 28. Ayşe, Bora ve Can’ın toplam 72 bilyesi vardır.  Ayşe bilyelerinin yarısını Bora’ya,  Bora bily...
+--------------------------------------------------
+Soru 29:
+  Dosya: soru_29_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x1127
+  Metin: 29. Bir hava yolu şirketinde bir adet tek yön bilet fiyatı 150 TL, bir adet gidiş-dönüş bilet fiyatı...
+--------------------------------------------------
+Soru 30:
+  Dosya: soru_30_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x695
+  Metin: 30. Bir köyde üretilen tahılların cinslere göre miktarca dağılımı aşağıdaki daire grafikte verilmişt...
+--------------------------------------------------
+Soru 31:
+  Dosya: soru_31_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x939
+  Metin: 31. A, B ve C marka üç adet yerli otomobil ile X, Y ve Z marka üç adet yabancı otomobil tek sıra hâl...
+--------------------------------------------------
+Soru 32:
+  Dosya: soru_32_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x694
+  Metin: 32. Yukarıda gösterilen küp biçimindeki hilesiz zar atılıyor ve bir yüzünün zeminle temas ettiği bil...
+--------------------------------------------------
+Soru 33:
+  Dosya: soru_33_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x670
+  Metin: 33. Düzlemde bulunan A, B, C, D ve E noktalarıyla ilgili olarak aşağıdakiler biliniyor. Buna göre, u...
+--------------------------------------------------
+Soru 34:
+  Dosya: soru_34_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x689
+  Metin: 34. Şekildeki ABCDE düzgün beşgeninde K ve L noktaları sırasıyla AB ve DA doğru parçalarının orta no...
+--------------------------------------------------
+Soru 35:
+  Dosya: soru_35_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x682
+  Metin: 35. ABCD bir kare Şekildeki AFB üçgeninin alanı olduğuna göre, ABCD karesinin alanı kaç dir? A) B) C...
+--------------------------------------------------
+Soru 36:
+  Dosya: soru_36_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x689
+  Metin: 36. Aşağıda; akrebi 1 birim, yelkovanı 2 birim uzunluğunda olan bir duvar saati verilmiştir. Buna gö...
+--------------------------------------------------
+Soru 37:
+  Dosya: soru_37_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x857
+  Metin: 37. Birim karelerden oluşan şekildeki kâğıt üzerine; PQ doğrusuna Q noktasında teğet olacak biçimde ...
+--------------------------------------------------
+Soru 38:
+  Dosya: soru_38_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x644
+  Metin: 38. Ayrıt uzunlukları 4, 5 ve 7 birim olan bir dikdörtgenler prizmasından, kesişen tüm ayrıtları bir...
+--------------------------------------------------
+Soru 39:
+  Dosya: soru_39_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x670
+  Metin: 39. Dik koordinat düzleminde verilen şekildeki ABCD dikdörtgeninin çevresi kaç birimdir? A) B) C) D)...
+--------------------------------------------------
+Soru 40:
+  Dosya: soru_40_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x631
+  Metin: 40. Dik koordinat düzleminde , ve noktaları veriliyor. Buna göre, vektörü aşağıdakilerden hangisidir...
+--------------------------------------------------

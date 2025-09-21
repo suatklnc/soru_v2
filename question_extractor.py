@@ -720,6 +720,85 @@ class QuestionExtractor:
         
         print(f"Soru listesi kaydedildi: {output_file}")
 
+# Matematik testi çıkarma fonksiyonu
+def extract_math_test_from_pdf(pdf_path: str, output_path: str = None) -> bool:
+    """PDF'den matematik testini çıkarır"""
+    
+    if not os.path.exists(pdf_path):
+        print(f"❌ PDF dosyası bulunamadı: {pdf_path}")
+        return False
+    
+    # Çıktı dosya adını oluştur
+    if output_path is None:
+        base_name = os.path.splitext(os.path.basename(pdf_path))[0]
+        output_path = f"{base_name}_matematik_testi.pdf"
+    
+    try:
+        # PDF dosyasını yükle
+        doc = fitz.open(pdf_path)
+        
+        print(f"Matematik testi sınırları aranıyor: {pdf_path}")
+        
+        start_page = None
+        end_page = None
+        
+        # Matematik testi başlangıç metni
+        math_start_text = "2. Cevaplarınızı, cevap kâğıdının Temel Matematik Testi için ayrılan kısmına işaretleyiniz."
+        
+        # Fen bilimleri testi başlangıç metni (matematik testi bitişi)
+        fen_start_text = "2. Cevaplarınızı, cevap kâğıdının Fen Bilimleri Testi için ayrılan kısmına işaretleyiniz."
+        
+        # Tüm sayfaları tara
+        for page_num in range(len(doc)):
+            page = doc[page_num]
+            page_text = page.get_text()
+            
+            # Matematik testi başlangıcını bul
+            if math_start_text in page_text and start_page is None:
+                start_page = page_num
+                print(f"✅ Matematik testi başlangıcı bulundu: Sayfa {page_num + 1}")
+            
+            # Fen bilimleri testi başlangıcını bul (matematik testi bitişi)
+            if fen_start_text in page_text and end_page is None:
+                end_page = page_num
+                print(f"✅ Matematik testi bitişi bulundu: Sayfa {page_num + 1}")
+                break  # İlk fen bilimleri testi bulunduğunda dur
+        
+        if start_page is not None and end_page is not None:
+            print(f"📊 Matematik testi: Sayfa {start_page + 1} - {end_page} (toplam {end_page - start_page} sayfa)")
+            
+            # Yeni PDF oluştur
+            math_doc = fitz.open()
+            
+            # Matematik testi sayfalarını kopyala (ilk sayfa dahil, son sayfa hariç)
+            for page_num in range(start_page, end_page):
+                page = doc[page_num]
+                new_page = math_doc.new_page(width=page.rect.width, height=page.rect.height)
+                new_page.show_pdf_page(new_page.rect, doc, page_num)
+                print(f"   Sayfa {page_num + 1} kopyalandı")
+            
+            # Matematik testi PDF'ini kaydet
+            math_doc.save(output_path)
+            math_doc.close()
+            doc.close()
+            
+            print(f"✅ Matematik testi çıkarıldı: {output_path}")
+            print(f"📄 Sayfa sayısı: {end_page - start_page}")
+            
+            return True
+        else:
+            print("❌ Matematik testi sınırları bulunamadı!")
+            if start_page is None:
+                print("   - Matematik testi başlangıcı bulunamadı")
+            if end_page is None:
+                print("   - Fen bilimleri testi başlangıcı bulunamadı")
+            doc.close()
+            return False
+            
+    except Exception as e:
+        print(f"❌ Matematik testi çıkarılırken hata: {e}")
+        return False
+
 # Çoklu PDF işleme fonksiyonu
 def process_multiple_pdfs(pdf_directory=".", output_base_dir="output"):
     """Birden fazla PDF dosyasını toplu olarak işler"""
@@ -767,8 +846,21 @@ def process_multiple_pdfs(pdf_directory=".", output_base_dir="output"):
             pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
             output_dir = os.path.join(output_base_dir, pdf_name)
             
+            # Önce matematik testi çıkarmayı dene
+            math_test_path = f"{pdf_name}_matematik_testi.pdf"
+            math_extracted = extract_math_test_from_pdf(pdf_path, math_test_path)
+            
+            # Hangi PDF'i kullanacağımızı belirle
+            if math_extracted:
+                print(f"📚 Matematik testi çıkarıldı, matematik testi işleniyor...")
+                pdf_to_process = math_test_path
+                output_dir = os.path.join(output_base_dir, f"{pdf_name}_matematik")
+            else:
+                print(f"📄 Matematik testi çıkarılamadı, orijinal PDF işleniyor...")
+                pdf_to_process = pdf_path
+            
             # Question extractor oluştur
-            extractor = QuestionExtractor(pdf_path)
+            extractor = QuestionExtractor(pdf_to_process)
             
             # PDF'i ön işleme tabi tut
             print("PDF ön işleme başlıyor...")
@@ -794,10 +886,12 @@ def process_multiple_pdfs(pdf_directory=".", output_base_dir="output"):
             # Sonuçları rapora ekle
             result = {
                 'pdf_name': os.path.basename(pdf_path),
+                'processed_pdf': os.path.basename(pdf_to_process),
                 'output_dir': output_dir,
                 'total_questions': stats['total_questions'],
                 'questions_by_side': stats['questions_by_side'],
                 'question_numbers': stats['question_numbers'],
+                'math_test_extracted': math_extracted,
                 'status': 'success'
             }
             batch_report['results'].append(result)
@@ -838,6 +932,8 @@ def process_multiple_pdfs(pdf_directory=".", output_base_dir="output"):
             f.write(f"Durum: {result['status']}\n")
             if result['status'] == 'success':
                 f.write(f"Çıktı Klasörü: {result['output_dir']}\n")
+                f.write(f"İşlenen PDF: {result['processed_pdf']}\n")
+                f.write(f"Matematik Testi Çıkarıldı: {'Evet' if result.get('math_test_extracted', False) else 'Hayır'}\n")
                 f.write(f"Soru Sayısı: {result['total_questions']}\n")
                 f.write(f"Sol Taraf: {result['questions_by_side']['sol']}\n")
                 f.write(f"Sağ Taraf: {result['questions_by_side']['sag']}\n")

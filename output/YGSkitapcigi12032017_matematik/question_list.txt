@@ -1,0 +1,242 @@
+=== ÇIKARILAN SORULAR ===
+
+Soru 1:
+  Dosya: soru_1_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x620
+  Metin: 1. işleminin sonucu kaçtır? A) B) C) 2 3 D) E)
+--------------------------------------------------
+Soru 2:
+  Dosya: soru_2_sayfa_1_sol.png
+  Sayfa: 1 (sol)
+  Boyut: 596x543
+  Metin: 2. işleminin sonucu kaçtır? A) B) C) D) E) 200 225 250 275 300 2
+--------------------------------------------------
+Soru 3:
+  Dosya: soru_3_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x565
+  Metin: 3. işleminin sonucu kaçtır? A) B) C) 2 4 D) E)
+--------------------------------------------------
+Soru 4:
+  Dosya: soru_4_sayfa_1_sag.png
+  Sayfa: 1 (sag)
+  Boyut: 596x652
+  Metin: 4. A ve B sıfırdan farklı rakamlar olmak üzere, olduğuna göre, toplamı kaçtır? A) B) C) D) E) 9 10 1...
+--------------------------------------------------
+Soru 5:
+  Dosya: soru_5_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x678
+  Metin: 5. sayıları için aşağıdaki sıralamalardan hangisi doğrudur? A) B) C) D) E)
+--------------------------------------------------
+Soru 6:
+  Dosya: soru_6_sayfa_2_sol.png
+  Sayfa: 2 (sol)
+  Boyut: 596x622
+  Metin: 6. Sıfırdan farklı x ve y gerçel sayıları için eşitlikleri veriliyor. Buna göre, toplamı kaçtır? A) ...
+--------------------------------------------------
+Soru 7:
+  Dosya: soru_7_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x734
+  Metin: 7. a ve b birer tam sayı olmak üzere, sayısının tek sayı olduğu biliniyor. Buna göre, I. II. III. sa...
+--------------------------------------------------
+Soru 8:
+  Dosya: soru_8_sayfa_2_sag.png
+  Sayfa: 2 (sag)
+  Boyut: 596x590
+  Metin: 8. olduğuna göre, ifadesinin değeri kaçtır? A) B) C) D) E) 2 3 4 5 6 Diğer sayfaya geçiniz. 6
+--------------------------------------------------
+Soru 9:
+  Dosya: soru_9_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x667
+  Metin: 9. a, b ve c pozitif gerçel sayılar olmak üzere, olduğuna göre, toplamı kaçtır? 9 18 27 A) B) C) D) ...
+--------------------------------------------------
+Soru 10:
+  Dosya: soru_10_sayfa_3_sol.png
+  Sayfa: 3 (sol)
+  Boyut: 596x614
+  Metin: 10. x ve y pozitif gerçel sayıları için eşitliği sağlanıyor. Buna göre, oranı kaçtır? 4 2 1 A) B) C)...
+--------------------------------------------------
+Soru 11:
+  Dosya: soru_11_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x566
+  Metin: 11. x gerçel sayısı için olduğuna göre, ifadesinin alabileceği tam sayı değerlerinin toplamı kaçtır?...
+--------------------------------------------------
+Soru 12:
+  Dosya: soru_12_sayfa_3_sag.png
+  Sayfa: 3 (sag)
+  Boyut: 596x713
+  Metin: 12. A ve B kümelerinin eleman sayılarıyla ilgili eşitlikleri veriliyor. Buna göre, A kümesinin elema...
+--------------------------------------------------
+Soru 13:
+  Dosya: soru_13_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x746
+  Metin: 13. k bir gerçel sayı olmak üzere, pozitif gerçel sayılar kümesi üzerinde tanımlı  f  ve  g  fonksiy...
+--------------------------------------------------
+Soru 14:
+  Dosya: soru_14_sayfa_4_sol.png
+  Sayfa: 4 (sol)
+  Boyut: 596x608
+  Metin: 14. polinomu polinomuna bölünüyor. Bu bölümden elde edilen kalan kaçtır? A) B) C) D) E) 10 12 14 16 ...
+--------------------------------------------------
+Soru 15:
+  Dosya: soru_15_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x521
+  Metin: 15. İki basamaklı AB doğal sayısı, iki basamaklı BA doğal sayısından rakamlarının toplamı kadar fazl...
+--------------------------------------------------
+Soru 16:
+  Dosya: soru_16_sayfa_4_sag.png
+  Sayfa: 4 (sag)
+  Boyut: 596x822
+  Metin: 16. Bir kümenin eleman sayısı o kümenin bir elemanı ise bu kümeye "gizemli küme" denir. Örneğin; bir...
+--------------------------------------------------
+Soru 17:
+  Dosya: soru_17_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x613
+  Metin: 17. Yamaç, kimya dersindeki deneyde elindeki bir miktar karışıma her seferinde; karışım kaç gram ise...
+--------------------------------------------------
+Soru 18:
+  Dosya: soru_18_sayfa_5_sol.png
+  Sayfa: 5 (sol)
+  Boyut: 596x996
+  Metin: 18. Bir mağazada, tüm gömleklerde etiket fiyatı üzerinden % 25 indirim yapılmıştır. Ayrıca mağazada,...
+--------------------------------------------------
+Soru 19:
+  Dosya: soru_19_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x595
+  Metin: 19. 8 takımın katıldığı bir turnuvada her takım diğer takımlarla birer kez karşılaşmıştır. Turnuvada...
+--------------------------------------------------
+Soru 20:
+  Dosya: soru_20_sayfa_5_sag.png
+  Sayfa: 5 (sag)
+  Boyut: 596x1014
+  Metin: 20. İki bölümden oluşan bir parkurda sabit hızlarla hareket eden üç araçla ilgili aşağıdaki bilgiler...
+--------------------------------------------------
+Soru 21:
+  Dosya: soru_21_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x668
+  Metin: 21. Naneli ve limonlu şekerlerin üretildiği bir fabrikada, şekerler her bir pakette 10 tane olacak ş...
+--------------------------------------------------
+Soru 22:
+  Dosya: soru_22_sayfa_6_sol.png
+  Sayfa: 6 (sol)
+  Boyut: 596x941
+  Metin: 22. Nagihan, boncuklar ve pullar kullanarak bir kumaş üzerine tek sıra hâlinde işleme yapmıştır. Bu ...
+--------------------------------------------------
+Soru 23:
+  Dosya: soru_23_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x584
+  Metin: 23. Her sırada iki kişinin oturduğu bir sınıfta, kız öğrencilerin 'si birer erkek öğrenci ile; erkek...
+--------------------------------------------------
+Soru 24:
+  Dosya: soru_24_sayfa_6_sag.png
+  Sayfa: 6 (sag)
+  Boyut: 596x1025
+  Metin: 24. Bir torbada, her biri 3 kg olan 9 adet kırmızı ve her biri 6 kg olan 12 adet mavi top bulunmakta...
+--------------------------------------------------
+Soru 25:
+  Dosya: soru_25_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x606
+  Metin: 25. Engin, bir kalıp kek tarifi için malzeme olarak  3 bardak un ya da 2 bardak irmik  1 bardak sü...
+--------------------------------------------------
+Soru 26:
+  Dosya: soru_26_sayfa_7_sol.png
+  Sayfa: 7 (sol)
+  Boyut: 596x1003
+  Metin: 26. Bir çiçekçide çalışan Aslı ve Banu'nun bir gül ve bir papatya demetini hazırlama süreleri aşağıd...
+--------------------------------------------------
+Soru 27:
+  Dosya: soru_27_sayfa_7_sag.png
+  Sayfa: 7 (sag)
+  Boyut: 596x1222
+  Metin: 27. Bir fabrikada 2016 yılında üretilen toplam 1800 adet A, B ve C model aracın üretim miktarlarının...
+--------------------------------------------------
+Soru 28:
+  Dosya: soru_28_sayfa_8_sol.png
+  Sayfa: 8 (sol)
+  Boyut: 596x1128
+  Metin: 28. Pelin; bir kafeteryaya ait, yalnızca sıcak içecekler kısmı yırtılmış olan aşağıdaki menüyü evind...
+--------------------------------------------------
+Soru 29:
+  Dosya: soru_29_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x697
+  Metin: 29. Arda, Berk ve Can'ın oynadığı bir körebe oyununda ebe olan kişi diğerlerinden birini yakalamakta...
+--------------------------------------------------
+Soru 30:
+  Dosya: soru_30_sayfa_8_sag.png
+  Sayfa: 8 (sag)
+  Boyut: 596x582
+  Metin: 30. Buna göre,  x  kaç derecedir? A) B) C) D) E) 15 18 21 24 27 Diğer sayfaya geçiniz. 2
+--------------------------------------------------
+Soru 31:
+  Dosya: soru_31_sayfa_9_sol.png
+  Sayfa: 9 (sol)
+  Boyut: 596x869
+  Metin: 31. Aslı Öğretmen, bir etkinlikte ABC eşkenar üçgeninin içindeki özdeş eşkenar üçgenleri şekildeki g...
+--------------------------------------------------
+Soru 32:
+  Dosya: soru_32_sayfa_9_sag.png
+  Sayfa: 9 (sag)
+  Boyut: 596x710
+  Metin: 32. Şekildeki gibi verilen iki kareden; ABCD karesinin alanı, CEFG karesinin alanının 2 katına eşitt...
+--------------------------------------------------
+Soru 33:
+  Dosya: soru_33_sayfa_10_sol.png
+  Sayfa: 10 (sol)
+  Boyut: 596x1093
+  Metin: 33. Kısa kenarı 12 birim, uzun kenarı 18 birim olan ABCD dikdörtgeni, olacak şekilde AL ve KC doğrul...
+--------------------------------------------------
+Soru 34:
+  Dosya: soru_34_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x662
+  Metin: 34. Şekilde, K ve L noktaları sırasıyla AB ve DE çaplı yarım çemberler üzerindedir. Buna göre,  x  k...
+--------------------------------------------------
+Soru 35:
+  Dosya: soru_35_sayfa_10_sag.png
+  Sayfa: 10 (sag)
+  Boyut: 596x668
+  Metin: 35. Şekilde, E ve C noktaları O merkezli çeyrek çemberin üzerindedir. Buna göre,  x  kaç birimdir? A...
+--------------------------------------------------
+Soru 36:
+  Dosya: soru_36_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x697
+  Metin: 36. Yukarıda çaplı yarım çemberin içine merkezleri doğrusal olan , ve çaplı üç yarım çember çizilmiş...
+--------------------------------------------------
+Soru 37:
+  Dosya: soru_37_sayfa_11_sol.png
+  Sayfa: 11 (sol)
+  Boyut: 596x912
+  Metin: 37. Ayrıt uzunlukları 10, 10, 25 birim olan bir kare dik prizma, ayrıt uzunluğu 1 birim olan küplere...
+--------------------------------------------------
+Soru 38:
+  Dosya: soru_38_sayfa_11_sag.png
+  Sayfa: 11 (sag)
+  Boyut: 596x1253
+  Metin: 38. Yüksekliği 10 birim olan içi boş bir dik dairesel silindirin içine Şekil 1’deki gibi yüksekliği ...
+--------------------------------------------------
+Soru 39:
+  Dosya: soru_39_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x505
+  Metin: 39. Dik koordinat düzleminde, doğruları ile doğrusunun kesişim noktalarını köşe kabul eden bir paral...
+--------------------------------------------------
+Soru 40:
+  Dosya: soru_40_sayfa_12_sol.png
+  Sayfa: 12 (sol)
+  Boyut: 596x857
+  Metin: 40. Şekilde, dik koordinat düzleminde birer kenarı x-ekseni üzerinde olan OABC ve ADEF kareleri veri...
+--------------------------------------------------
